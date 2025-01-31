@@ -1,0 +1,206 @@
+/* General Styles */
+html, body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto", sans-serif;
+  }
+  
+  body {
+    transition: background-color 0.3s ease;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header Styles */
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #009688;
+    color: white;
+    padding: 16px;
+  }
+  
+  .header-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .header-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .header .w3-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  /* Main Content Styles */
+  .main-content {
+    margin-top: 100px;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .content-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  
+  /* Grid Layout for Main Content */
+  .w3-row-padding {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Adds spacing between columns */
+  }
+  
+  .w3-third {
+    flex: 1 1 calc(33.33% - 16px); /* One-third width with gap */
+    box-sizing: border-box;
+  }
+  
+  .w3-twothird {
+    flex: 1 1 calc(66.66% - 16px); /* Two-thirds width with gap */
+    box-sizing: border-box;
+  }
+  
+  /* Footer Styles */
+  .footer {
+    background-color: #009688;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    margin-top: 32px;
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+  
+  .footer-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  
+  .footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 8px;
+  }
+  
+  /* Dark Mode Styles */
+  .w3-dark-grey .w3-white {
+    background-color: #2d2d2d !important;
+    color: #ffffff !important;
+  }
+  
+  .w3-dark-grey .w3-text-grey {
+    color: #e0e0e0 !important;
+  }
+  
+  .w3-dark-grey .w3-text-teal {
+    color: #4db6ac !important;
+  }
+  
+  .dark-mode a {
+    color: #4da6ff !important;
+  }
+  
+  .w3-dark-grey .w3-card {
+    background-color: #2d2d2d !important;
+    color: #ffffff !important;
+  }
+  
+  .w3-dark-grey .w3-card-4 {
+    background-color: #2d2d2d !important;
+    color: #ffffff !important;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .w3-third, .w3-twothird {
+      flex: 1 1 100%; /* Stack columns on smaller screens */
+    }
+    .content-wrapper {
+      padding: 0 8px;
+    }
+    .header-buttons {
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
+  
+  @media print {
+    .header {
+      position: relative;
+    }
+    .main-content {
+      margin-top: 0;
+    }
+    .w3-card-4 {
+      box-shadow: none;
+    }
+    .w3-button {
+      display: none;
+    }
+  }
+  
+  /* Custom Styles */
+  .outlined-text {
+    color: white;
+    text-shadow: 
+      -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
+  }
+  
+  /* Portfolio Section Styles */
+  .w3-row-padding {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  
+  .w3-half {
+    flex: 1 1 calc(50% - 8px);
+    box-sizing: border-box;
+  }
+  
+  .w3-card {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .w3-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .w3-container {
+    padding: 16px;
+  }
+  
+  /* Skill Icons */
+  .fa-fw {
+    width: 1.25em;
+    text-align: center;
+  }
+  
+  /* Dark Mode Toggle Button */
+  .w3-button {
+    cursor: pointer;
+  }
