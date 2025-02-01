@@ -1,206 +1,264 @@
-/* General Styles */
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Base Styles */
 html, body, h1, h2, h3, h4, h5, h6 {
-    font-family: "Roboto", sans-serif;
-  }
-  
-  body {
-    transition: background-color 0.3s ease;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Header Styles */
-  .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    background-color: #009688;
-    color: white;
-    padding: 16px;
-  }
-  
-  .header-content {
-    max-width: 1400px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .header h1 {
-    margin: 0;
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .header-buttons {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .header .w3-button {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  
-  /* Main Content Styles */
-  .main-content {
-    margin-top: 100px;
-    padding: 0;
-    width: 100%;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  background-color: #f1f1f1;
+  transition: background-color 0.3s ease;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+/* Typography */
+p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+h2.w3-text-grey {
+  font-size: 24px;
+  font-weight: 500;
+  color: #4a5568;
+  margin-bottom: 12px;
+  padding-bottom: 0;
+}
+
+h5.w3-opacity {
+  font-size: 18px;
+  font-weight: 500;
+  color: #2d3748;
+  margin: 0;
+  padding-top: 8px;
+}
+
+h6.w3-text-teal {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 4px 0;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #009688;
+  color: white;
+  padding: 16px;
+}
+
+.header-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.header .w3-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Main Content Layout */
+.main-content {
+  margin-top: 100px;
+  padding: 0;
+  width: 100%;
+}
+
+.content-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.w3-row-padding {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.w3-third {
+  flex: 1 1 calc(33.33% - 16px);
+  box-sizing: border-box;
+}
+
+.w3-twothird {
+  flex: 1 1 calc(66.66% - 16px);
+  box-sizing: border-box;
+}
+
+.w3-half {
+  flex: 1 1 calc(50% - 8px);
+  box-sizing: border-box;
+}
+
+/* Cards and Containers */
+.w3-card, .w3-card-4 {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.16), 0 2px 4px rgba(0,0,0,0.23);
+  margin-bottom: 16px;
+}
+
+.w3-container {
+  padding: 12px 16px;
+}
+
+.w3-container p {
+  margin: 8px 0;
+}
+
+.w3-container hr {
+  margin: 12px 0;
+}
+
+.w3-margin-bottom {
+  margin-bottom: 16px !important;
+}
+
+/* Profile Image and Name */
+.w3-display-container {
+  position: relative;
+  width: 100%;
+}
+
+.w3-display-bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 16px;
+  text-align: left;  /* Align text to the right */
+  width: 100%;
+}
+
+.w3-display-bottomleft h2 {
+  margin: 0;
+  color: white;
+  font-size: 24px;
+  text-shadow: 
+    2px 2px 4px rgba(0,0,0,0.5),
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+/* Footer */
+.footer {
+  background-color: #009688;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  margin-top: 32px;
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+
+.footer-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+/* Icons */
+.fa-fw {
+  width: 1.25em;
+  text-align: center;
+}
+
+/* Buttons */
+.w3-button {
+  cursor: pointer;
+}
+
+/* Dark Mode */
+.w3-dark-grey {
+  background-color: #1a1a1a !important;
+}
+
+.w3-dark-grey .w3-white,
+.w3-dark-grey .w3-card,
+.w3-dark-grey .w3-card-4 {
+  background-color: #2d2d2d !important;
+  color: #ffffff !important;
+}
+
+.w3-dark-grey .w3-text-grey {
+  color: #e0e0e0 !important;
+}
+
+.w3-dark-grey .w3-text-teal {
+  color: #4db6ac !important;
+}
+
+.w3-dark-grey .w3-opacity {
+  color: #ffffff !important;
+  opacity: 0.9;
+}
+
+.dark-mode a {
+  color: #4da6ff !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .w3-third, .w3-twothird {
+    flex: 1 1 100%;
   }
   
   .content-wrapper {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 16px;
+    padding: 0 8px;
   }
   
-  /* Grid Layout for Main Content */
-  .w3-row-padding {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px; /* Adds spacing between columns */
+  .header-buttons {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .header {
+    position: relative;
   }
   
-  .w3-third {
-    flex: 1 1 calc(33.33% - 16px); /* One-third width with gap */
-    box-sizing: border-box;
+  .main-content {
+    margin-top: 0;
   }
   
-  .w3-twothird {
-    flex: 1 1 calc(66.66% - 16px); /* Two-thirds width with gap */
-    box-sizing: border-box;
+  .w3-card-4 {
+    box-shadow: none;
   }
   
-  /* Footer Styles */
-  .footer {
-    background-color: #009688;
-    color: white;
-    text-align: center;
-    padding: 16px;
-    margin-top: 32px;
-    width: 100%;
-    left: 0;
-    right: 0;
-  }
-  
-  .footer-content {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 16px;
-  }
-  
-  .footer a {
-    color: white;
-    text-decoration: none;
-    margin: 0 8px;
-  }
-  
-  /* Dark Mode Styles */
-  .w3-dark-grey .w3-white {
-    background-color: #2d2d2d !important;
-    color: #ffffff !important;
-  }
-  
-  .w3-dark-grey .w3-text-grey {
-    color: #e0e0e0 !important;
-  }
-  
-  .w3-dark-grey .w3-text-teal {
-    color: #4db6ac !important;
-  }
-  
-  .dark-mode a {
-    color: #4da6ff !important;
-  }
-  
-  .w3-dark-grey .w3-card {
-    background-color: #2d2d2d !important;
-    color: #ffffff !important;
-  }
-  
-  .w3-dark-grey .w3-card-4 {
-    background-color: #2d2d2d !important;
-    color: #ffffff !important;
-  }
-  
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .w3-third, .w3-twothird {
-      flex: 1 1 100%; /* Stack columns on smaller screens */
-    }
-    .content-wrapper {
-      padding: 0 8px;
-    }
-    .header-buttons {
-      flex-direction: column;
-      gap: 5px;
-    }
-  }
-  
-  @media print {
-    .header {
-      position: relative;
-    }
-    .main-content {
-      margin-top: 0;
-    }
-    .w3-card-4 {
-      box-shadow: none;
-    }
-    .w3-button {
-      display: none;
-    }
-  }
-  
-  /* Custom Styles */
-  .outlined-text {
-    color: white;
-    text-shadow: 
-      -1px -1px 0 #000,  
-      1px -1px 0 #000,
-      -1px 1px 0 #000,
-      1px 1px 0 #000;
-  }
-  
-  /* Portfolio Section Styles */
-  .w3-row-padding {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-  }
-  
-  .w3-half {
-    flex: 1 1 calc(50% - 8px);
-    box-sizing: border-box;
-  }
-  
-  .w3-card {
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .w3-card img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .w3-container {
-    padding: 16px;
-  }
-  
-  /* Skill Icons */
-  .fa-fw {
-    width: 1.25em;
-    text-align: center;
-  }
-  
-  /* Dark Mode Toggle Button */
   .w3-button {
-    cursor: pointer;
+    display: none;
   }
+}
