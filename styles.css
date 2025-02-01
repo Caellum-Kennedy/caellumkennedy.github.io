@@ -1,3 +1,40 @@
+/* Inter Font Setup */
+@font-face {
+  font-family: 'Inter';
+  src: url('fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype-variations');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('fonts/Inter-Italic-VariableFont_opsz,wght.ttf') format('truetype-variations');
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+/* Fallback fonts for older browsers */
+@font-face {
+  font-family: 'Inter';
+  src: url('fonts/static/Inter_18pt-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('fonts/static/Inter_18pt-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('fonts/static/Inter_18pt-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
 /* Base Styles */
 html, body, h1, h2, h3, h4, h5, h6 {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -145,7 +182,7 @@ h6.w3-text-teal {
   left: 0;
   right: 0;
   padding: 16px;
-  text-align: left;  /* Align text to the right */
+  text-align: left;
   width: 100%;
 }
 
@@ -153,7 +190,7 @@ h6.w3-text-teal {
   margin: 0;
   color: white;
   font-size: 24px;
-  text-shadow: 
+  text-shadow:
     2px 2px 4px rgba(0,0,0,0.5),
     -1px -1px 0 #000,
     1px -1px 0 #000,
