@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Caellum Kennedy - CV</title>
   <meta charset="UTF-8">
@@ -51,7 +52,14 @@
     }
 
     /* Base Styles */
-    html, body, h1, h2, h3, h4, h5, h6 {
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
       font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     }
 
@@ -168,9 +176,10 @@
     }
 
     /* Cards and Containers */
-    .w3-card, .w3-card-4 {
+    .w3-card,
+    .w3-card-4 {
       background-color: #fff;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.16), 0 2px 4px rgba(0,0,0,0.23);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16), 0 2px 4px rgba(0, 0, 0, 0.23);
       margin-bottom: 16px;
     }
 
@@ -211,7 +220,7 @@
       color: white;
       font-size: 24px;
       text-shadow:
-        2px 2px 4px rgba(0,0,0,0.5),
+        2px 2px 4px rgba(0, 0, 0, 0.5),
         -1px -1px 0 #000,
         1px -1px 0 #000,
         -1px 1px 0 #000,
@@ -284,14 +293,16 @@
 
     /* Responsive Design */
     @media (max-width: 768px) {
-      .w3-third, .w3-twothird {
+
+      .w3-third,
+      .w3-twothird {
         flex: 1 1 100%;
       }
-      
+
       .content-wrapper {
         padding: 0 8px;
       }
-      
+
       .header-buttons {
         flex-direction: column;
         gap: 5px;
@@ -303,224 +314,244 @@
       .header {
         position: relative;
       }
-      
+
       .main-content {
         margin-top: 0;
       }
-      
+
       .w3-card-4 {
         box-shadow: none;
       }
-      
+
       .w3-button {
         display: none;
       }
     }
   </style>
 </head>
+
 <body class="w3-light-grey">
 
-<!-- Fixed Header -->
-<div class="header">
-  <div class="header-content">
-    <h1>Caellum Kennedy | Full-stack developer</h1>
-    <div class="header-buttons">
-      <button onclick="toggleDarkMode()" class="w3-button w3-white">
-        <i class="fas fa-moon"></i>
-        Toggle Theme
-      </button>
-      <a href="files/caellum_kennedy_CV.pdf" download="Caellum_Kennedy_CV.pdf" class="w3-button w3-white">
-        <i class="fas fa-download"></i>
-        Download CV
-      </a>
+  <!-- Fixed Header -->
+  <div class="header">
+    <div class="header-content">
+      <h1>Caellum Kennedy | Full-stack developer</h1>
+      <div class="header-buttons">
+        <button onclick="toggleDarkMode()" class="w3-button w3-white">
+          <i class="fas fa-moon"></i>
+          Toggle Theme
+        </button>
+        <a href="files/caellum_kennedy_CV.pdf" download="Caellum_Kennedy_CV.pdf" class="w3-button w3-white">
+          <i class="fas fa-download"></i>
+          Download CV
+        </a>
+      </div>
     </div>
   </div>
-</div>
 
-<!-- Main Content -->
-<div class="main-content">
-  <div class="content-wrapper">
-    <!-- The Grid -->
-    <div class="w3-row-padding">
-      <!-- Left Column -->
-      <div class="w3-third">
-        <div class="w3-white w3-text-grey w3-card-4">
-          <div class="w3-display-container">
-            <img src="/images/myphoto.jpeg" style="width:100%" alt="Avatar">
-            <div class="w3-display-bottomleft w3-container w3-text-black">
-              <h2 class="outlined-text">Caellum Kennedy</h2>
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="content-wrapper">
+      <!-- The Grid -->
+      <div class="w3-row-padding">
+        <!-- Left Column -->
+        <div class="w3-third">
+          <div class="w3-white w3-text-grey w3-card-4">
+            <div class="w3-display-container">
+              <img src="/images/myphoto.jpeg" style="width:100%" alt="Avatar">
+              <div class="w3-display-bottomleft w3-container w3-text-black">
+                <h2 class="outlined-text">Caellum Kennedy</h2>
+              </div>
             </div>
-          </div>
-          <div class="w3-container">
-            <p><i class="fas fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Software Engineer</p>
-            <p><i class="fas fa-location-dot fa-fw w3-margin-right w3-large w3-text-teal"></i>Galway, Ireland</p>
-            <p><i class="fas fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>caellumkennedy@gmail.com</p>
-            <p><i class="fas fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>0872619210</p>
-            <hr>
+            <div class="w3-container">
+              <p><i class="fas fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Software Engineer</p>
+              <p><i class="fas fa-location-dot fa-fw w3-margin-right w3-large w3-text-teal"></i>Galway, Ireland</p>
+              <p><i class="fas fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>caellumkennedy@gmail.com</p>
+              <p><i class="fas fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>0872619210</p>
+              <hr>
 
-            <p class="w3-large"><b><i class="fas fa-star fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
-            <p>Cloud Computing (Firebase and Sharepoint List experience)</p>
-            <p>Microsoft Power Applications (Power Apps, Power BI, Sharepoint, etc.)</p>
-            <p>Microsoft Office (Excel, Word, Powerpoint etc.)</p>
-            <br>
+              <p class="w3-large"><b><i class="fas fa-star fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+              <p>Cloud Computing (Firebase and Sharepoint List experience)</p>
+              <p>Microsoft Power Applications (Power Apps, Power BI, Sharepoint, etc.)</p>
+              <p>Microsoft Office (Excel, Word, Powerpoint etc.)</p>
+              <br>
 
-            <p class="w3-large w3-text-theme"><b><i class="fas fa-code fa-fw w3-margin-right w3-text-teal"></i>Coding Languages</b></p>
-            <p>HTML/CSS, PowerFx</p>
-            <p>Java, C#, Python</p>
-            <p>SQL, JavaScript</p>
-            <p>JSON, R, MATLAB</p>
-            <p>SpringBoot, REACT, Node.js</p>
-            <br>
+              <p class="w3-large w3-text-theme"><b><i class="fas fa-code fa-fw w3-margin-right w3-text-teal"></i>Coding
+                  Languages</b></p>
+              <p>HTML/CSS, PowerFx</p>
+              <p>Java, C#, Python</p>
+              <p>SQL, JavaScript</p>
+              <p>JSON, R, MATLAB</p>
+              <p>SpringBoot, REACT, Node.js</p>
+              <br>
 
-            <p class="w3-large w3-text-theme"><b><i class="fas fa-certificate fa-fw w3-margin-right w3-text-teal"></i>Certifications</b></p>
-            <p>Mountain Skills 2 <b>[Mountaineering Ireland] [2024]</b></p>
-            <p>Remote Emergency Care 3 <b>[Mountaineering Ireland] [2024]</b></p>
-            <p>Pool Lifeguard Certifate <b>[2023]</b></p>
-            <p>Swim Teacher Certificate <b>[2022]</b></p>
-            <p>PADI Open Water Diver Certificate <b>[2023]</b></p>
-            <br>
+              <p class="w3-large w3-text-theme"><b><i
+                    class="fas fa-certificate fa-fw w3-margin-right w3-text-teal"></i>Certifications</b></p>
+              <p>Mountain Skills 2 <b>[Mountaineering Ireland] [2024]</b></p>
+              <p>Remote Emergency Care 3 <b>[Mountaineering Ireland] [2024]</b></p>
+              <p>Pool Lifeguard Certifate <b>[2023]</b></p>
+              <p>Swim Teacher Certificate <b>[2022]</b></p>
+              <p>PADI Open Water Diver Certificate <b>[2023]</b></p>
+              <br>
 
-            <!-- Social Media Links -->
-            <p class="w3-large w3-text-theme"><b><i class="fas fa-link fa-fw w3-margin-right w3-text-teal"></i>Social Media</b></p>
-            <p>
-              <a href="https://github.com/reer123" target="_blank" class="w3-text-teal"><i class="fab fa-github"></i> GitHub - Personal</a>
-            </p>
-            <p>
-              <a href="https://github.com/caellumkennedy" target="_blank" class="w3-text-teal"><i class="fab fa-github"></i> GitHub - BSC</a>
-            </p>
-            <br>
-          </div>
-        </div><br>
-      </div>
-
-      <!-- Right Column -->
-      <div class="w3-twothird">
-        <!-- Work Experience -->
-        <div class="w3-container w3-card w3-white w3-margin-bottom">
-          <h2 class="w3-text-grey w3-padding-16"><i class="fas fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
-          <!-- Work experience content remains the same -->
-          <div class="w3-container">
-            <h5 class="w3-opacity"><b>Placement Student : Boston Scientific</b></h5>
-            <h6 class="w3-text-teal"><i class="fas fa-calendar fa-fw w3-margin-right"></i>Jan 2025 - Aug 2025</h6>
-            <p>Placement Student with Boston Scientific working as a Software Engineer maintaining, updating, and creating applications for use by the Software Quality Engineer team in the Validations department.</p>
-            <p>- Performed essential maintenance for the Software Validations department, updating and optimizing existing applications for the department.</p>
-            <p>- Created extensive documentation for existing programs to help future software engineers perform essential maintenance.</p>
-          </div>
-          <div class="w3-container">
-            <h5 class="w3-opacity"><b>University Projects : University of Galway</b></h5>
-            <h6 class="w3-text-teal"><i class="fas fa-calendar fa-fw w3-margin-right"></i>Sep 2023 - Jan 2025</h6>
-            <p>Created a web application using SpringBoot and REACT on a Firebase database to track users' Spotify statistics utilizing cloud storage, Spotify's API, and Last FM's API.</p>
-          </div>
-          <div class="w3-container">
-            <h5 class="w3-opacity"><b>Lifeguard : Bay Sports</b></h5>
-            <h6 class="w3-text-teal"><i class="fas fa-calendar fa-fw w3-margin-right"></i>May 2024 - Aug 2024</h6>
-            <p>Part-time lifeguard leading schools tours around Hodson Bay's Bay Sports.</p>
-          </div>
-          <div class="w3-container">
-            <h5 class="w3-opacity"><b>Lifeguard/Swim Teacher : Roscommon Leisure Centre</b></h5>
-            <h6 class="w3-text-teal"><i class="fas fa-calendar fa-fw w3-margin-right"></i>May 2021 - Sep 2023</h6>
-            <p>Full-time Lifeguard and Swim Teacher in Roscommon Leisure Centre. Conducting swimming lessons, performing routine site maintenance, and cleaning.</p>
-          </div>
+              <!-- Social Media Links -->
+              <p class="w3-large w3-text-theme"><b><i class="fas fa-link fa-fw w3-margin-right w3-text-teal"></i>Social
+                  Media</b></p>
+              <p>
+                <a href="https://github.com/reer123" target="_blank" class="w3-text-teal"><i class="fab fa-github"></i>
+                  GitHub - Personal</a>
+              </p>
+              <p>
+                <a href="https://github.com/caellumkennedy" target="_blank" class="w3-text-teal"><i
+                    class="fab fa-github"></i> GitHub - BSC</a>
+              </p>
+              <br>
+            </div>
+          </div><br>
         </div>
 
-        <!-- Education -->
-        <div class="w3-container w3-card w3-white w3-margin-bottom">
-          <h2 class="w3-text-grey w3-padding-16"><i class="fas fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
-          <div class="w3-container">
-            <h5 class="w3-opacity"><b>BSC Computer Science and Information Technology</b></h5>
-            <h6 class="w3-text-teal">University of Galway 2023 - Current</h6>
-            <p>Projected Results: 1:1</p>
+        <!-- Right Column -->
+        <div class="w3-twothird">
+          <!-- Work Experience -->
+          <div class="w3-container w3-card w3-white w3-margin-bottom">
+            <h2 class="w3-text-grey w3-padding-16"><i
+                class="fas fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+            <!-- Work experience content remains the same -->
+            <div class="w3-container">
+              <h5 class="w3-opacity"><b>Placement Student : Boston Scientific</b></h5>
+              <h6 class="w3-text-teal"><i class="fas fa-calendar fa-fw w3-margin-right"></i>Jan 2025 - Aug 2025</h6>
+              <p>Placement Student with Boston Scientific working as a Software Engineer maintaining, updating, and
+                creating applications for use by the Software Quality Engineer team in the Validations department.</p>
+              <p>- Performed essential maintenance for the Software Validations department, updating and optimizing
+                existing applications for the department.</p>
+              <p>- Created extensive documentation for existing programs to help future software engineers perform
+                essential maintenance.</p>
+            </div>
+            <div class="w3-container">
+              <h5 class="w3-opacity"><b>University Projects : University of Galway</b></h5>
+              <h6 class="w3-text-teal"><i class="fas fa-calendar fa-fw w3-margin-right"></i>Sep 2023 - Jan 2025</h6>
+              <p>Created a web application using SpringBoot and REACT on a Firebase database to track users' Spotify
+                statistics utilizing cloud storage, Spotify's API, and Last FM's API.</p>
+            </div>
+            <div class="w3-container">
+              <h5 class="w3-opacity"><b>Lifeguard : Bay Sports</b></h5>
+              <h6 class="w3-text-teal"><i class="fas fa-calendar fa-fw w3-margin-right"></i>May 2024 - Aug 2024</h6>
+              <p>Part-time lifeguard leading schools tours around Hodson Bay's Bay Sports.</p>
+            </div>
+            <div class="w3-container">
+              <h5 class="w3-opacity"><b>Lifeguard/Swim Teacher : Roscommon Leisure Centre</b></h5>
+              <h6 class="w3-text-teal"><i class="fas fa-calendar fa-fw w3-margin-right"></i>May 2021 - Sep 2023</h6>
+              <p>Full-time Lifeguard and Swim Teacher in Roscommon Leisure Centre. Conducting swimming lessons,
+                performing routine site maintenance, and cleaning.</p>
+            </div>
           </div>
-          <div class="w3-container">
-            <h5 class="w3-opacity"><b>BSC Physics with Astrophysics</b></h5>
-            <h6 class="w3-text-teal">Maynooth University 2018 - 2022</h6>
-            <p>Transferred to University of Galway in the third year of the degree.</p>
+
+          <!-- Education -->
+          <div class="w3-container w3-card w3-white w3-margin-bottom">
+            <h2 class="w3-text-grey w3-padding-16"><i
+                class="fas fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+            <div class="w3-container">
+              <h5 class="w3-opacity"><b><a href="https://www.universityofgalway.ie/courses/undergraduate-courses/computer-science-and-information-technology.html" target="_blank" style="color:#1a73e8; text-decoration:none;">BSc Computer Science and Information Technology</a></b></h5>
+              <h6 class="w3-text-teal">University of Galway 2023 - Current</h6>
+              <p>Projected Results: 1:1</p>
+              <p>Final Year Project: The Effect of Historical Checkpoints on a Real Time Strategy Game Agent Training
+                <a href="files/Final Year Project.pdf" download><img src="files/download.png" alt="Download" style="width:20px; height:20px; vertical-align:middle; margin-left:6px;"></a>
+              </p>
+            </div>
+            <div class="w3-container">
+              <h5 class="w3-opacity"><b><a href="https://www.maynoothuniversity.ie/study-maynooth/undergraduate-studies/courses/bsc-physics-astrophysics" target="_blank" style="color:#1a73e8; text-decoration:none;">BSc Physics with Astrophysics</a></b></h5>
+              <h6 class="w3-text-teal">Maynooth University 2018 - 2022</h6>
+              <p>Transferred to University of Galway in the third year of the degree.</p>
+            </div>
+            <div class="w3-container">
+              <h5 class="w3-opacity"><b>Leaving Certificate</b></h5>
+              <h6 class="w3-text-teal">CBS Roscommon 2013 - 2018</h6>
+              <p>Results (456 points):</p>
+              <div class="w3-row-padding">
+                <div class="w3-half">
+                  <p>Irish: O4</p>
+                  <p>English: H3</p>
+                  <p>Mathematics: H4</p>
+                  <p>Geography: H3</p>
+                </div>
+                <div class="w3-half">
+                  <p>Spanish: H6</p>
+                  <p>Physics: H3</p>
+                  <p>Business: H2</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="w3-container">
-            <h5 class="w3-opacity"><b>Leaving Certificate</b></h5>
-            <h6 class="w3-text-teal">CBS Roscommon 2013 - 2018</h6>
-            <p>Results (456 points):</p>
+
+          <!-- Portfolio Section -->
+          <div class="w3-container w3-card w3-white w3-margin-bottom">
+            <h2 class="w3-text-grey w3-padding-16"><i
+                class="fas fa-folder fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Portfolio</h2>
             <div class="w3-row-padding">
               <div class="w3-half">
-                <p>Irish: O4</p>
-                <p>English: H3</p>
-                <p>Mathematics: H4</p>
-                <p>Geography: H3</p>
-              </div>
-              <div class="w3-half">
-                <p>Spanish: H6</p>
-                <p>Physics: H3</p>
-                <p>Business: H2</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Portfolio Section -->
-        <div class="w3-container w3-card w3-white w3-margin-bottom">
-          <h2 class="w3-text-grey w3-padding-16"><i class="fas fa-folder fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Portfolio</h2>
-          <div class="w3-row-padding">
-            <div class="w3-half">
-              <div class="w3-card">
-                <img src="images/MMScreen.PNG" alt="Project 1" style="width:100%">
-                <div class="w3-container">
-                  <h5>Melody Metrics</h5>
-                  <p><b>[SPRING BOOT / REACT]</b></p> 
-                  <p>Melody Metrics is a SprintBoot REACT web application which utilises the Spotify API to display statistics on a user's Spotify music history.
+                <div class="w3-card">
+                  <img src="images/MMScreen.PNG" alt="Project 1" style="width:100%">
+                  <div class="w3-container">
+                    <h5>Melody Metrics</h5>
+                    <p><b>[SPRING BOOT / REACT]</b></p>
+                    <p>Melody Metrics is a SprintBoot REACT web application which utilises the Spotify API to display
+                      statistics on a user's Spotify music history.
                       It also displays LastFM trending songs.
-                  </p>
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="w3-half">
-              <div class="w3-card">
-                <img src="images/best4.PNG" alt="Project 2" style="width:100%">
-                <div class="w3-container">
-                  <h5>Boston Scientific</h5>
-                  <p><b>[POWER APPS / SHAREPOINT LISTS]</b></p>
-                  <p>Optimisations and upgrades to software applications in the Software Validations department of Boston Scientific. Improved 
-                   loading times from 60 seconds to 5 seconds.
-                  </p>
+              <div class="w3-half">
+                <div class="w3-card">
+                  <img src="images/best4.PNG" alt="Project 2" style="width:100%">
+                  <div class="w3-container">
+                    <h5>Boston Scientific</h5>
+                    <p><b>[POWER APPS / SHAREPOINT LISTS]</b></p>
+                    <p>Optimisations and upgrades to software applications in the Software Validations department of
+                      Boston Scientific. Improved
+                      loading times from 60 seconds to 5 seconds.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Footer -->
-    <div class="footer">
-      <div class="footer-content">
-        <p>© 2025 Caellum Kennedy (Background Image: 2025 Leenane Hill by Caellum Kennedy)</p>
-        <p>
-          <a href="https://github.com/reer123" target="_blank"><i class="fab fa-github"></i> GitHub - Personal</a> |
-          <a href="https://github.com/caellumkennedy" target="_blank"><i class="fab fa-github"></i> GitHub - BSC</a> |
-          <a href="mailto:caellumkennedy@gmail.com"><i class="fas fa-envelope"></i> Email Me</a>
-        </p>
+      <!-- Footer -->
+      <div class="footer">
+        <div class="footer-content">
+          <p>© 2025 Caellum Kennedy (Background Image: 2025 Leenane Hill by Caellum Kennedy)</p>
+          <p>
+            <a href="https://github.com/reer123" target="_blank"><i class="fab fa-github"></i> GitHub - Personal</a> |
+            <a href="https://github.com/caellumkennedy" target="_blank"><i class="fab fa-github"></i> GitHub - BSC</a> |
+            <a href="mailto:caellumkennedy@gmail.com"><i class="fas fa-envelope"></i> Email Me</a>
+          </p>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<!-- Dark Mode Script remains the same -->
-<script>
-  function toggleDarkMode() {
-    document.body.classList.toggle("w3-dark-grey");
-    document.body.classList.toggle("w3-light-grey");
-    document.body.classList.toggle("dark-mode");
-    
-    const isDarkMode = document.body.classList.contains("w3-dark-grey");
-    localStorage.setItem("darkMode", isDarkMode);
-  }
+  <!-- Dark Mode Script remains the same -->
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("w3-dark-grey");
+      document.body.classList.toggle("w3-light-grey");
+      document.body.classList.toggle("dark-mode");
 
-  const savedDarkMode = localStorage.getItem("darkMode") === "true";
-  if (savedDarkMode) {
-    document.body.classList.add("w3-dark-grey");
-    document.body.classList.add("dark-mode");
-    document.body.classList.remove("w3-light-grey");
-  }
-</script>
+      const isDarkMode = document.body.classList.contains("w3-dark-grey");
+      localStorage.setItem("darkMode", isDarkMode);
+    }
+
+    const savedDarkMode = localStorage.getItem("darkMode") === "true";
+    if (savedDarkMode) {
+      document.body.classList.add("w3-dark-grey");
+      document.body.classList.add("dark-mode");
+      document.body.classList.remove("w3-light-grey");
+    }
+  </script>
 
 </body>
+
 </html>
