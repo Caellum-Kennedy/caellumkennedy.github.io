@@ -2,11 +2,20 @@
 <html lang="en">
 
 <head>
-  <title>Caellum Kennedy - CV</title>
+  <title>Caellum Kennedy | Full-Stack Software Engineer</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="CV of Caellum Kennedy, a Software Engineer based in Galway, Ireland.">
+  <meta name="description" content="CV of Caellum Kennedy — Full-Stack Software Engineer based in Galway, Ireland.">
   <meta name="keywords" content="Software Engineer, CV, Caellum Kennedy, Galway, Ireland">
+  <meta name="author" content="Caellum Kennedy">
+  <meta property="og:title" content="Caellum Kennedy | Full-Stack Software Engineer">
+  <meta property="og:description"
+    content="CV of Caellum Kennedy — Full-Stack Software Engineer based in Galway, Ireland.">
+  <meta property="og:image" content="https://caellumkennedy.com/images/myphoto.jpeg">
+  <meta property="og:url" content="https://caellumkennedy.com">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://caellumkennedy.com">
+  <link rel="icon" href="images/myphoto.jpeg" type="image/jpeg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <style>
     /* Inter Font Setup */
@@ -309,6 +318,16 @@
       }
     }
 
+    /* Course title links */
+    .course-link {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+
+    .course-link:hover {
+      text-decoration: underline;
+    }
+
     /* Print Styles */
     @media print {
       .header {
@@ -366,8 +385,9 @@
             <div class="w3-container">
               <p><i class="fas fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Software Engineer</p>
               <p><i class="fas fa-location-dot fa-fw w3-margin-right w3-large w3-text-teal"></i>Galway, Ireland</p>
-              <p><i class="fas fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>caellumkennedy@gmail.com</p>
-              <p><i class="fas fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>0872619210</p>
+              <p><i class="fas fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i><a
+                  href="mailto:caellumkennedy@gmail.com"
+                  style="color:inherit; text-decoration:none;">caellumkennedy@gmail.com</a></p>
               <hr>
 
               <p class="w3-large"><b><i class="fas fa-star fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
@@ -405,6 +425,10 @@
                 <a href="https://github.com/caellumkennedy" target="_blank" class="w3-text-teal"><i
                     class="fab fa-github"></i> GitHub - BSC</a>
               </p>
+              <p>
+                <a href="YOUR_LINKEDIN_URL" target="_blank" class="w3-text-teal"><i class="fab fa-linkedin"></i>
+                  LinkedIn</a>
+              </p>
               <br>
             </div>
           </div><br>
@@ -412,11 +436,21 @@
 
         <!-- Right Column -->
         <div class="w3-twothird">
+          <!-- About -->
+          <div class="w3-container w3-card w3-white w3-margin-bottom">
+            <h2 class="w3-text-grey w3-padding-16"><i
+                class="fas fa-user fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>About</h2>
+            <div class="w3-container">
+              <p>Final-year Computer Science student at the University of Galway (projected 1:1) with hands-on industry
+                experience as a Software Engineer at Boston Scientific. Passionate about building clean, functional
+                software from full-stack web applications to AI game agents.</p>
+            </div>
+          </div>
+
           <!-- Work Experience -->
           <div class="w3-container w3-card w3-white w3-margin-bottom">
             <h2 class="w3-text-grey w3-padding-16"><i
                 class="fas fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
-            <!-- Work experience content remains the same -->
             <div class="w3-container">
               <h5 class="w3-opacity"><b>Placement Student : Boston Scientific</b></h5>
               <h6 class="w3-text-teal"><i class="fas fa-calendar fa-fw w3-margin-right"></i>Jan 2025 - Aug 2025</h6>
@@ -451,15 +485,20 @@
             <h2 class="w3-text-grey w3-padding-16"><i
                 class="fas fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
             <div class="w3-container">
-              <h5 class="w3-opacity"><b><a href="https://www.universityofgalway.ie/courses/undergraduate-courses/computer-science-and-information-technology.html" target="_blank" style="color:#1a73e8; text-decoration:none;">BSc Computer Science and Information Technology</a></b></h5>
+              <h5 class="w3-opacity"><b><a
+                    href="https://www.universityofgalway.ie/courses/undergraduate-courses/computer-science-and-information-technology.html"
+                    target="_blank" class="course-link">BSc Computer Science and Information Technology</a></b></h5>
               <h6 class="w3-text-teal">University of Galway 2023 - Current</h6>
               <p>Projected Results: 1:1</p>
               <p>Final Year Project: The Effect of Historical Checkpoints on a Real Time Strategy Game Agent Training
-                <a href="files/Final Year Project.pdf" download><img src="files/download.png" alt="Download" style="width:20px; height:20px; vertical-align:middle; margin-left:6px;"></a>
+                <a href="files/Final Year Project.pdf" download><img src="files/download.png" alt="Download"
+                    style="width:20px; height:20px; vertical-align:middle; margin-left:6px;"></a>
               </p>
             </div>
             <div class="w3-container">
-              <h5 class="w3-opacity"><b><a href="https://www.maynoothuniversity.ie/study-maynooth/undergraduate-studies/courses/bsc-physics-astrophysics" target="_blank" style="color:#1a73e8; text-decoration:none;">BSc Physics with Astrophysics</a></b></h5>
+              <h5 class="w3-opacity"><b><a
+                    href="https://www.maynoothuniversity.ie/study-maynooth/undergraduate-studies/courses/bsc-physics-astrophysics"
+                    target="_blank" class="course-link">BSc Physics with Astrophysics</a></b></h5>
               <h6 class="w3-text-teal">Maynooth University 2018 - 2022</h6>
               <p>Transferred to University of Galway in the third year of the degree.</p>
             </div>
@@ -526,6 +565,8 @@
           <p>
             <a href="https://github.com/reer123" target="_blank"><i class="fab fa-github"></i> GitHub - Personal</a> |
             <a href="https://github.com/caellumkennedy" target="_blank"><i class="fab fa-github"></i> GitHub - BSC</a> |
+            <a href="https://www.linkedin.com/in/caellum-kennedy-2167743b9/" target="_blank"><i
+                class="fab fa-linkedin"></i> LinkedIn</a> |
             <a href="mailto:caellumkennedy@gmail.com"><i class="fas fa-envelope"></i> Email Me</a>
           </p>
         </div>
