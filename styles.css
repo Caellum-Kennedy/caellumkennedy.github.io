@@ -1,7 +1,7 @@
 /* Inter Font Setup */
 @font-face {
   font-family: 'Inter';
-  src: url('../fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype-variations');
+  src: url('./fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype-variations');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -9,7 +9,7 @@
 
 @font-face {
   font-family: 'Inter';
-  src: url('../fonts/Inter-Italic-VariableFont_opsz,wght.ttf') format('truetype-variations');
+  src: url('./fonts/Inter-Italic-VariableFont_opsz,wght.ttf') format('truetype-variations');
   font-weight: 100 900;
   font-style: italic;
   font-display: swap;
@@ -18,7 +18,7 @@
 /* Fallback fonts for older browsers */
 @font-face {
   font-family: 'Inter';
-  src: url('../fonts/static/Inter_18pt-Regular.ttf') format('truetype');
+  src: url('./fonts/static/Inter_18pt-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -26,31 +26,43 @@
 
 @font-face {
   font-family: 'Inter';
-  src: url('../fonts/static/Inter_18pt-Medium.ttf') format('truetype');
+  src: url('./fonts/static/Inter_18pt-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
+/* Bold falls back to Black (Bold .ttf not present in fonts/static/) */
 @font-face {
   font-family: 'Inter';
-  src: url('../fonts/static/Inter_18pt-Bold.ttf') format('truetype');
+  src: url('./fonts/static/Inter_18pt-Black.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 /* Base Styles */
-html, body, h1, h2, h3, h4, h5, h6 {
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 body {
-  background-color: #f1f1f1;
-  transition: background-color 0.3s ease;
+  background-image: url('/images/backgroundscenery.jpeg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   margin: 0;
   padding: 0;
   font-size: 16px;
+  position: relative;
 }
 
 /* Typography */
@@ -99,17 +111,23 @@ h6.w3-text-teal {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
-.header h1 {
+.header h1,
+.header-title {
   margin: 0;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: bold;
+  color: white;
+  text-decoration: none;
 }
 
 .header-buttons {
   display: flex;
   gap: 10px;
+  align-items: center;
 }
 
 .header .w3-button {
@@ -118,9 +136,50 @@ h6.w3-text-teal {
   gap: 8px;
 }
 
+/* Nav */
+.header-nav {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.nav-link--active {
+  background-color: rgba(255, 255, 255, 0.25);
+  font-weight: 600;
+}
+
+.w3-dark-grey .nav-link,
+.w3-dark-grey .nav-link--active {
+  color: white !important;
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
 /* Main Content Layout */
 .main-content {
-  margin-top: 100px;
+  margin-top: 120px;
   padding: 0;
   width: 100%;
 }
@@ -131,6 +190,7 @@ h6.w3-text-teal {
   padding: 0 16px;
 }
 
+/* Grid Layout */
 .w3-row-padding {
   display: flex;
   flex-wrap: wrap;
@@ -153,9 +213,10 @@ h6.w3-text-teal {
 }
 
 /* Cards and Containers */
-.w3-card, .w3-card-4 {
+.w3-card,
+.w3-card-4 {
   background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.16), 0 2px 4px rgba(0,0,0,0.23);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16), 0 2px 4px rgba(0, 0, 0, 0.23);
   margin-bottom: 16px;
 }
 
@@ -173,6 +234,34 @@ h6.w3-text-teal {
 
 .w3-margin-bottom {
   margin-bottom: 16px !important;
+}
+
+/* Quick-link cards (home page) */
+.quick-link-card {
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.quick-link-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  transform: translateY(-2px);
+}
+
+/* Skill tags (skills page) */
+.skill-tag {
+  display: inline-block;
+  background-color: #e0f2f1;
+  color: #00695c;
+  border-radius: 14px;
+  padding: 4px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 4px 2px;
+}
+
+.w3-dark-grey .skill-tag {
+  background-color: #004d40;
+  color: #b2dfdb;
 }
 
 /* Profile Image and Name */
@@ -196,7 +285,7 @@ h6.w3-text-teal {
   color: white;
   font-size: 24px;
   text-shadow:
-    2px 2px 4px rgba(0,0,0,0.5),
+    2px 2px 4px rgba(0, 0, 0, 0.5),
     -1px -1px 0 #000,
     1px -1px 0 #000,
     -1px 1px 0 #000,
@@ -263,24 +352,61 @@ h6.w3-text-teal {
   opacity: 0.9;
 }
 
-.dark-mode a {
+.dark-mode a:not(.nav-link) {
   color: #4da6ff !important;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .w3-third, .w3-twothird {
+
+  .w3-third,
+  .w3-twothird {
     flex: 1 1 100%;
   }
-  
+
   .content-wrapper {
     padding: 0 8px;
   }
-  
+
   .header-buttons {
     flex-direction: column;
     gap: 5px;
   }
+
+  body {
+    background-attachment: scroll;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .header-nav {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #009688;
+    padding: 8px 16px 16px;
+    z-index: 999;
+  }
+
+  .header.nav-open .header-nav {
+    display: flex;
+  }
+}
+
+/* Course title links */
+.course-link {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.course-link:hover {
+  text-decoration: underline;
 }
 
 /* Print Styles */
@@ -288,15 +414,15 @@ h6.w3-text-teal {
   .header {
     position: relative;
   }
-  
+
   .main-content {
     margin-top: 0;
   }
-  
+
   .w3-card-4 {
     box-shadow: none;
   }
-  
+
   .w3-button {
     display: none;
   }
