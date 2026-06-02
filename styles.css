@@ -247,6 +247,53 @@ h6.w3-text-teal {
   transform: translateY(-2px);
 }
 
+/* Section toggle buttons (home page) */
+.section-toggle {
+  background: none;
+  border: none;
+  padding: 0;
+  width: 100%;
+  text-align: left;
+  display: block;
+  cursor: pointer;
+  color: inherit;
+  font: inherit;
+}
+
+/* Active card state */
+.quick-link-card.active {
+  border-left: 3px solid #009688;
+  background-color: #f0faf9;
+}
+
+.w3-dark-grey .quick-link-card.active {
+  background-color: #1e2e2d !important;
+}
+
+/* Chevron rotation */
+.section-chevron {
+  float: right;
+  transition: transform 0.3s ease;
+  color: #009688;
+}
+
+.quick-link-card.active .section-chevron {
+  transform: rotate(180deg);
+}
+
+/* Collapsible section panels */
+.section-panel {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.45s ease, opacity 0.3s ease;
+}
+
+.section-panel.open {
+  max-height: 4000px;
+  opacity: 1;
+}
+
 /* Skill tags (skills page) */
 .skill-tag {
   display: inline-block;

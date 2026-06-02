@@ -65,9 +65,10 @@
       </button>
       <nav class="header-nav">
         <a href="/index.html" class="nav-link">Home</a>
-        <a href="/experience.html" class="nav-link">Experience</a>
-        <a href="/projects.html" class="nav-link">Projects</a>
-        <a href="/skills.html" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
       </nav>
       <div class="header-buttons">
         <button onclick="toggleDarkMode()" class="w3-button w3-white w3-round-large">
@@ -113,7 +114,7 @@
                 <a href="https://www.linkedin.com/in/caellum-kennedy-2167743b9/" target="_blank" rel="noopener noreferrer" class="w3-text-teal"><i class="fab fa-linkedin"></i> LinkedIn</a>
               </p>
               <br>
-              <p><a href="/skills.html" class="w3-text-teal"><i class="fas fa-star fa-fw"></i> Skills &amp; Certifications</a></p>
+              <p><a href="#skills" onclick="toggleSection('skills'); history.replaceState(null,'','#skills');" class="w3-text-teal"><i class="fas fa-star fa-fw"></i> Skills &amp; Certifications</a></p>
               <br>
             </div>
           </div><br>
@@ -132,37 +133,222 @@
             </div>
           </div>
 
-          <!-- Quick Links -->
-          <div class="w3-row-padding">
-            <div class="w3-third">
-              <a href="/experience.html" style="text-decoration:none; color:inherit;">
-                <div class="w3-card w3-white w3-margin-bottom quick-link-card">
-                  <div class="w3-container w3-padding">
-                    <h5><i class="fas fa-suitcase fa-fw w3-text-teal"></i> Experience</h5>
-                    <p>Work history &amp; education</p>
-                  </div>
-                </div>
-              </a>
+          <!-- Quick Links (accordion) -->
+          <button onclick="toggleSection('experience')" class="section-toggle">
+            <div id="card-experience" class="w3-card w3-white w3-margin-bottom quick-link-card">
+              <div class="w3-container w3-padding">
+                <h2 class="w3-text-grey"><i class="fas fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Experience <i class="fas fa-chevron-down section-chevron"></i></h2>
+                <p>Work history</p>
+              </div>
             </div>
-            <div class="w3-third">
-              <a href="/projects.html" style="text-decoration:none; color:inherit;">
-                <div class="w3-card w3-white w3-margin-bottom quick-link-card">
-                  <div class="w3-container w3-padding">
-                    <h5><i class="fas fa-folder fa-fw w3-text-teal"></i> Projects</h5>
-                    <p>Portfolio &amp; demos</p>
-                  </div>
-                </div>
-              </a>
+          </button>
+
+          <!-- Expandable Panels -->
+          <div id="panel-experience" class="section-panel">
+            <div class="w3-container w3-card w3-white w3-margin-bottom">
+              <div class="w3-container">
+                <h5 class="w3-opacity"><b>Placement Student : Boston Scientific</b></h5>
+                <h6 class="w3-text-teal"><i class="fas fa-calendar fa-fw w3-margin-right"></i>Jan 2025 - Aug 2025</h6>
+                <p>Placement Student with Boston Scientific working as a Software Engineer maintaining, updating, and
+                  creating applications for use by the Software Quality Engineer team in the Validations department.</p>
+                <p>- Performed essential maintenance for the Software Validations department, updating and optimizing
+                  existing applications for the department.</p>
+                <p>- Created extensive documentation for existing programs to help future software engineers perform
+                  essential maintenance.</p>
+              </div>
+              <div class="w3-container">
+                <h5 class="w3-opacity"><b>University Projects : University of Galway</b></h5>
+                <h6 class="w3-text-teal"><i class="fas fa-calendar fa-fw w3-margin-right"></i>Sep 2023 - Jan 2025</h6>
+                <p>Created a web application using SpringBoot and REACT on a Firebase database to track users' Spotify
+                  statistics utilizing cloud storage, Spotify's API, and Last FM's API.</p>
+              </div>
+              <div class="w3-container">
+                <h5 class="w3-opacity"><b>Lifeguard : Bay Sports</b></h5>
+                <h6 class="w3-text-teal"><i class="fas fa-calendar fa-fw w3-margin-right"></i>May 2024 - Aug 2024</h6>
+                <p>Part-time lifeguard leading schools tours around Hodson Bay's Bay Sports.</p>
+              </div>
+              <div class="w3-container">
+                <h5 class="w3-opacity"><b>Lifeguard/Swim Teacher : Roscommon Leisure Centre</b></h5>
+                <h6 class="w3-text-teal"><i class="fas fa-calendar fa-fw w3-margin-right"></i>May 2021 - Sep 2023</h6>
+                <p>Full-time Lifeguard and Swim Teacher in Roscommon Leisure Centre. Conducting swimming lessons,
+                  performing routine site maintenance, and cleaning.</p>
+              </div>
             </div>
-            <div class="w3-third">
-              <a href="/skills.html" style="text-decoration:none; color:inherit;">
-                <div class="w3-card w3-white w3-margin-bottom quick-link-card">
-                  <div class="w3-container w3-padding">
-                    <h5><i class="fas fa-star fa-fw w3-text-teal"></i> Skills</h5>
-                    <p>Languages &amp; certifications</p>
+          </div>
+
+          <button onclick="toggleSection('education')" class="section-toggle">
+            <div id="card-education" class="w3-card w3-white w3-margin-bottom quick-link-card">
+              <div class="w3-container w3-padding">
+                <h2 class="w3-text-grey"><i class="fas fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education <i class="fas fa-chevron-down section-chevron"></i></h2>
+                <p>Degrees &amp; qualifications</p>
+              </div>
+            </div>
+          </button>
+
+          <div id="panel-education" class="section-panel">
+            <div class="w3-container w3-card w3-white w3-margin-bottom">
+              <div class="w3-container">
+                <h5 class="w3-opacity"><b><a
+                      href="https://www.universityofgalway.ie/courses/undergraduate-courses/computer-science-and-information-technology.html"
+                      target="_blank" rel="noopener noreferrer" class="course-link">BSc Computer Science and Information Technology</a></b></h5>
+                <h6 class="w3-text-teal">University of Galway 2023 - Current</h6>
+                <p>Projected Results: 1:1</p>
+                <p>Final Year Project: The Effect of Historical Checkpoints on a Real Time Strategy Game Agent Training
+                  <a href="/files/Final Year Project.pdf" download><img src="/files/download.png" alt="Download"
+                      style="width:20px; height:20px; vertical-align:middle; margin-left:6px;"></a>
+                </p>
+              </div>
+              <div class="w3-container">
+                <h5 class="w3-opacity"><b><a
+                      href="https://www.maynoothuniversity.ie/study-maynooth/undergraduate-studies/courses/bsc-physics-astrophysics"
+                      target="_blank" rel="noopener noreferrer" class="course-link">BSc Physics with Astrophysics</a></b></h5>
+                <h6 class="w3-text-teal">Maynooth University 2018 - 2022</h6>
+                <p>Transferred to University of Galway in the third year of the degree.</p>
+              </div>
+              <div class="w3-container">
+                <h5 class="w3-opacity"><b>Leaving Certificate</b></h5>
+                <h6 class="w3-text-teal">CBS Roscommon 2013 - 2018</h6>
+                <p>Results (456 points):</p>
+                <div class="w3-row-padding">
+                  <div class="w3-half">
+                    <p>Irish: O4</p>
+                    <p>English: H3</p>
+                    <p>Mathematics: H4</p>
+                    <p>Geography: H3</p>
+                  </div>
+                  <div class="w3-half">
+                    <p>Spanish: H6</p>
+                    <p>Physics: H3</p>
+                    <p>Business: H2</p>
                   </div>
                 </div>
-              </a>
+              </div>
+            </div>
+          </div>
+
+          <button onclick="toggleSection('projects')" class="section-toggle">
+            <div id="card-projects" class="w3-card w3-white w3-margin-bottom quick-link-card">
+              <div class="w3-container w3-padding">
+                <h2 class="w3-text-grey"><i class="fas fa-folder fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projects <i class="fas fa-chevron-down section-chevron"></i></h2>
+                <p>Portfolio &amp; demos</p>
+              </div>
+            </div>
+          </button>
+
+          <div id="panel-projects" class="section-panel">
+            <div class="w3-card w3-white w3-margin-bottom">
+              <div class="w3-row-padding" style="gap:0;">
+                <div class="w3-half" style="padding:0;">
+                  <img src="/images/MMScreen.PNG" alt="Melody Metrics screenshot" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
+                </div>
+                <div class="w3-half">
+                  <div class="w3-container" style="padding-top:20px;">
+                    <h3 class="w3-text-grey">Melody Metrics</h3>
+                    <p><b><i class="fas fa-code fa-fw w3-text-teal"></i> Spring Boot / React</b></p>
+                    <p>A Spring Boot and React web application that uses the Spotify API to display statistics on a user's
+                      Spotify music history. Also surfaces LastFM trending songs using Firebase as the database layer.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w3-card w3-white w3-margin-bottom">
+              <div class="w3-row-padding" style="gap:0;">
+                <div class="w3-half" style="padding:0;">
+                  <img src="/images/best4.PNG" alt="Boston Scientific project screenshot" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
+                </div>
+                <div class="w3-half">
+                  <div class="w3-container" style="padding-top:20px;">
+                    <h3 class="w3-text-grey">Boston Scientific</h3>
+                    <p><b><i class="fas fa-code fa-fw w3-text-teal"></i> Power Apps / SharePoint Lists</b></p>
+                    <p>Optimisations and upgrades to software applications in the Software Validations department at
+                      Boston Scientific. Improved application loading times from 60 seconds down to 5 seconds.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w3-card w3-white w3-margin-bottom">
+              <video controls preload="none" style="width:100%; display:block;">
+                <source src="/files/rl-video-step-0-to-step-50000.mp4" type="video/mp4">
+              </video>
+              <div class="w3-container">
+                <h3 class="w3-text-grey">MicroRTS Agent — Final Year Project</h3>
+                <p><b><i class="fas fa-code fa-fw w3-text-teal"></i> Python / Reinforcement Learning</b></p>
+                <p>Demonstration of a reinforcement learning agent trained using historical checkpoints playing against
+                  CoacAI in MicroRTS, as part of the final year project <em>The Effect of Historical Checkpoints on a
+                    Real Time Strategy Game Agent Training</em>.</p>
+                <p>
+                  <a href="/files/Final Year Project.pdf" download class="w3-text-teal">
+                    <i class="fas fa-file-pdf fa-fw"></i> Download FYP Report
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <button onclick="toggleSection('skills')" class="section-toggle">
+            <div id="card-skills" class="w3-card w3-white w3-margin-bottom quick-link-card">
+              <div class="w3-container w3-padding">
+                <h2 class="w3-text-grey"><i class="fas fa-star fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Skills <i class="fas fa-chevron-down section-chevron"></i></h2>
+                <p>Languages &amp; certifications</p>
+              </div>
+            </div>
+          </button>
+
+          <div id="panel-skills" class="section-panel">
+            <div class="w3-container w3-card w3-white w3-margin-bottom">
+              <div class="w3-container">
+                <h5 class="w3-opacity"><b>Cloud Computing</b></h5>
+                <p>Firebase and SharePoint List experience, including cloud database design, real-time data sync, and serverless backend integration.</p>
+                <hr>
+                <h5 class="w3-opacity"><b>Microsoft Power Platform</b></h5>
+                <p>Power Apps, Power BI, and SharePoint — building and optimising internal business tools and data dashboards for enterprise use.</p>
+                <hr>
+                <h5 class="w3-opacity"><b>Microsoft Office</b></h5>
+                <p>Excel, Word, PowerPoint — proficient in data analysis, documentation, and presentation creation.</p>
+              </div>
+            </div>
+            <div class="w3-container w3-card w3-white w3-margin-bottom">
+              <h2 class="w3-text-grey w3-padding-16"><i class="fas fa-code fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Coding Languages &amp; Frameworks</h2>
+              <div class="w3-container">
+                <span class="skill-tag">HTML / CSS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">C#</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">PowerFx</span>
+                <span class="skill-tag">JSON</span>
+                <span class="skill-tag">R</span>
+                <span class="skill-tag">MATLAB</span>
+                <span class="skill-tag">Spring Boot</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Node.js</span>
+              </div>
+            </div>
+            <div class="w3-container w3-card w3-white w3-margin-bottom">
+              <h2 class="w3-text-grey w3-padding-16"><i class="fas fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Certifications</h2>
+              <div class="w3-container">
+                <div style="display:flex; justify-content:space-between; align-items:baseline; padding: 8px 0; border-bottom: 1px solid #eee;">
+                  <span>Mountain Skills 2 &mdash; Mountaineering Ireland</span>
+                  <span class="w3-text-teal" style="font-weight:600; white-space:nowrap; margin-left:16px;">2024</span>
+                </div>
+                <div style="display:flex; justify-content:space-between; align-items:baseline; padding: 8px 0; border-bottom: 1px solid #eee;">
+                  <span>Remote Emergency Care 3 &mdash; Mountaineering Ireland</span>
+                  <span class="w3-text-teal" style="font-weight:600; white-space:nowrap; margin-left:16px;">2024</span>
+                </div>
+                <div style="display:flex; justify-content:space-between; align-items:baseline; padding: 8px 0; border-bottom: 1px solid #eee;">
+                  <span>PADI Open Water Diver</span>
+                  <span class="w3-text-teal" style="font-weight:600; white-space:nowrap; margin-left:16px;">2023</span>
+                </div>
+                <div style="display:flex; justify-content:space-between; align-items:baseline; padding: 8px 0; border-bottom: 1px solid #eee;">
+                  <span>Pool Lifeguard Certificate</span>
+                  <span class="w3-text-teal" style="font-weight:600; white-space:nowrap; margin-left:16px;">2023</span>
+                </div>
+                <div style="display:flex; justify-content:space-between; align-items:baseline; padding: 8px 0;">
+                  <span>Swim Teacher Certificate</span>
+                  <span class="w3-text-teal" style="font-weight:600; white-space:nowrap; margin-left:16px;">2022</span>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -197,14 +383,47 @@
       document.body.classList.remove("w3-light-grey");
     }
 
-    document.querySelectorAll('.nav-link').forEach(link => {
-      const href = link.getAttribute('href');
-      if (window.location.pathname === href ||
-          (href === '/index.html' && (window.location.pathname === '/' || window.location.pathname === ''))) {
-        link.classList.add('nav-link--active');
-        link.setAttribute('aria-current', 'page');
+    const SECTIONS = ['experience', 'education', 'projects', 'skills'];
+
+    function setActiveNav(id) {
+      document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('nav-link--active'));
+      const link = document.querySelector(`.nav-link[href="#${id}"]`);
+      if (link) { link.classList.add('nav-link--active'); link.setAttribute('aria-current', 'page'); }
+    }
+
+    function openSection(id) {
+      const panel = document.getElementById('panel-' + id);
+      const card  = document.getElementById('card-' + id);
+      if (!panel) return;
+      document.querySelectorAll('.section-panel').forEach(p => p.classList.remove('open'));
+      document.querySelectorAll('.quick-link-card').forEach(c => c.classList.remove('active'));
+      panel.classList.add('open');
+      card.classList.add('active');
+      setActiveNav(id);
+      setTimeout(() => panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 50);
+    }
+
+    function toggleSection(id) {
+      const panel = document.getElementById('panel-' + id);
+      const isOpen = panel.classList.contains('open');
+      document.querySelectorAll('.section-panel').forEach(p => p.classList.remove('open'));
+      document.querySelectorAll('.quick-link-card').forEach(c => c.classList.remove('active'));
+      document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('nav-link--active'));
+      if (!isOpen) {
+        openSection(id);
+        history.replaceState(null, '', '#' + id);
+      } else {
+        history.replaceState(null, '', window.location.pathname);
       }
-    });
+    }
+
+    function openFromHash() {
+      const hash = window.location.hash.slice(1);
+      if (SECTIONS.includes(hash)) openSection(hash);
+    }
+
+    window.addEventListener('hashchange', openFromHash);
+    document.addEventListener('DOMContentLoaded', openFromHash);
   </script>
 
 </body>
