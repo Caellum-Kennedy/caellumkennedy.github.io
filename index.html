@@ -63,13 +63,6 @@
       <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.header').classList.toggle('nav-open')">
         <i class="fas fa-bars"></i>
       </button>
-      <nav class="header-nav">
-        <a href="/index.html" class="nav-link">Home</a>
-        <a href="#experience" class="nav-link">Experience</a>
-        <a href="#education" class="nav-link">Education</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#skills" class="nav-link">Skills</a>
-      </nav>
       <div class="header-buttons">
         <button onclick="toggleDarkMode()" class="w3-button w3-white w3-round-large">
           <i class="fas fa-moon"></i> Toggle Theme
@@ -383,7 +376,6 @@
       document.body.classList.remove("w3-light-grey");
     }
 
-    const SECTIONS = ['experience', 'education', 'projects', 'skills'];
 
     function setActiveNav(id) {
       document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('nav-link--active'));
