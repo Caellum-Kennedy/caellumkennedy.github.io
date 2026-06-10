@@ -52,7 +52,13 @@
       { "@type": "CollegeOrUniversity", "name": "University of Galway" },
       { "@type": "CollegeOrUniversity", "name": "Maynooth University" }
     ],
-    "knowsAbout": ["Software Engineering", "Full-Stack Development", "Reinforcement Learning", "Java", "Python", "C#", "Spring Boot", "React", "Power Apps"],
+    "knowsAbout": ["Software Engineering", "Full-Stack Development", "Reinforcement Learning", "Java", "Python", "C#", "Spring Boot", "React", "Microsoft Power Platform"],
+    "hasCredential": {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Microsoft Certified: Power Platform Fundamentals (PL-900)",
+      "credentialCategory": "certification",
+      "dateCreated": "2026-06-10"
+    },
     "sameAs": [
       "https://github.com/reer123",
       "https://github.com/caellumkennedy",
@@ -110,7 +116,7 @@
           <svg class="icon icon--moon" aria-hidden="true"><use href="#i-moon"/></svg>
           <svg class="icon icon--sun" aria-hidden="true"><use href="#i-sun"/></svg>
         </button>
-        <a class="btn btn--primary header-cv" href="/files/caellum_kennedy_CV.pdf" download="Caellum_Kennedy_CV.pdf">
+        <a class="btn btn--primary header-cv" href="/files/Caellum_Kennedy_CV.pdf" download="Caellum_Kennedy_CV.pdf">
           <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg> CV
         </a>
         <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
@@ -144,7 +150,7 @@
           <a class="btn btn--primary" href="#projects">
             See my work <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg>
           </a>
-          <a class="btn btn--ghost" href="/files/caellum_kennedy_CV.pdf" download="Caellum_Kennedy_CV.pdf">
+          <a class="btn btn--ghost" href="/files/Caellum_Kennedy_CV.pdf" download="Caellum_Kennedy_CV.pdf">
             <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg> Download CV
           </a>
         </div>
@@ -183,9 +189,9 @@
               studied <strong>physics with astrophysics at Maynooth</strong> — which is where I learned to break hard
               problems down with maths, and discovered I enjoyed writing the simulations more than running them.</p>
             <p>I spent nine months at <strong>Boston Scientific</strong> as a placement software engineer in the
-              Software Validations department — shipping to a live production environment used across multiple
-              departments, untangling and documenting undocumented legacy systems, and making one key application load
-              twelve times faster.</p>
+              Software Validations department — shipping to a live production environment, untangling and documenting
+              undocumented legacy systems, and building a meeting-management app that won an internal Value Improvement
+              Programme award for saving $20,000 a year.</p>
             <p>My final-year research trained <strong>reinforcement-learning agents</strong> to play a real-time
               strategy game, using historical self-play to stop them forgetting their own best strategies. It's
               projected to earn 85%.</p>
@@ -208,7 +214,7 @@
         <div class="stats reveal-stagger">
           <div class="stat"><b>1:1</b><span>projected degree grade, BSc Computer Science &amp; IT</span></div>
           <div class="stat"><b>9 mo</b><span>industry placement at Boston Scientific</span></div>
-          <div class="stat"><b>12&times;</b><span>faster load time after optimising a key validations app</span></div>
+          <div class="stat"><b>$20k</b><span>saved per year by my award-winning app at Boston Scientific</span></div>
           <div class="stat"><b>80 M</b><span>training steps in my reinforcement-learning research</span></div>
         </div>
       </div>
@@ -231,20 +237,22 @@
             <p>Placement software engineer in the Software Validations department, building and maintaining the
               internal tooling used by Software Quality Engineers.</p>
             <ul>
-              <li>Built internal applications with Power Apps on SharePoint, used in production across multiple
-                departments.</li>
-              <li>Optimised an existing department application, cutting its loading time from ~60 seconds to ~5
-                seconds.</li>
-              <li>Maintained the C# (MVC) web application managing the Software Validations department, and wrote the
-                documentation it never had so future engineers wouldn't start from zero.</li>
-              <li>Coordinated releases with department leads — scheduling update windows and downtime for changes to a
-                live production environment.</li>
+              <li>Designed and built a Power Apps meeting-management system that won an internal Value Improvement
+                Programme award, saving $20,000 per year — and optimised its database loading from minutes to
+                milliseconds.</li>
+              <li>Built real-time reporting dashboards in Power BI and automated recurring workflows with Power
+                Automate.</li>
+              <li>Maintained and extended the C# (MVC) web application managing software validation records —
+                refactoring code and writing the documentation it never had.</li>
+              <li>Coordinated update schedules and downtime with leads across multiple teams, deploying changes into
+                an active production environment.</li>
             </ul>
             <ul class="tags">
               <li class="tag">Power Apps</li>
+              <li class="tag">Power BI</li>
+              <li class="tag">Power Automate</li>
               <li class="tag">SharePoint</li>
               <li class="tag">C# / MVC</li>
-              <li class="tag">Power BI</li>
             </ul>
           </li>
 
@@ -376,8 +384,9 @@
             </div>
             <div class="project-body">
               <h3>Validations Tooling — Boston Scientific</h3>
-              <p>Internal quality-and-compliance applications for the Software Validations department, built on Power
-                Apps and SharePoint. Rebuilt the data layer of a core app to cut load times from ~60s to ~5s.</p>
+              <p>Internal tooling for the Software Validations department, built on Power Apps and SharePoint —
+                including a meeting-management system that won a Value Improvement Programme award for saving $20,000 a
+                year.</p>
               <ul class="tags">
                 <li class="tag">Power Apps</li>
                 <li class="tag">SharePoint</li>
@@ -451,9 +460,11 @@
             <h3><svg class="icon" aria-hidden="true"><use href="#i-wrench"/></svg> Platforms &amp; Tools</h3>
             <ul class="tags">
               <li class="tag">Git / GitHub</li>
+              <li class="tag">GitHub Actions (CI/CD)</li>
               <li class="tag">Firebase</li>
               <li class="tag">Power Apps</li>
               <li class="tag">Power BI</li>
+              <li class="tag">Power Automate</li>
               <li class="tag">SharePoint</li>
               <li class="tag">Microsoft Office</li>
             </ul>
@@ -464,7 +475,8 @@
             <ul class="tags">
               <li class="tag">Full-stack development</li>
               <li class="tag">REST APIs</li>
-              <li class="tag">Agile</li>
+              <li class="tag">Agile / Scrum</li>
+              <li class="tag">Test-driven development</li>
               <li class="tag">MVC architecture</li>
               <li class="tag">Reinforcement learning</li>
               <li class="tag">Technical documentation</li>
@@ -491,6 +503,8 @@
             <span class="edu-badge">Projected First Class Honours (1:1)</span>
             <p>Final year project on reinforcement learning in real-time strategy games, supervised by Dr. Patrick
               Mannion — projected 85%.</p>
+            <p>Coursework: Software Engineering, Artificial Intelligence, Machine Learning, Distributed &amp; Parallel
+              Systems, Real-Time Systems, Computer Networks, Databases.</p>
           </div>
 
           <div class="edu-card reveal">
@@ -545,6 +559,8 @@
         </div>
 
         <ul class="cert-list reveal">
+          <li><span><a href="/files/PowerPlatformCert.pdf" target="_blank" rel="noopener noreferrer">Microsoft
+                Certified: Power Platform Fundamentals (PL-900)</a></span><span class="cert-year">2026</span></li>
           <li><span>Mountain Skills 2 — Mountaineering Ireland</span><span class="cert-year">2024</span></li>
           <li><span>Remote Emergency Care 3 — Mountaineering Ireland</span><span class="cert-year">2024</span></li>
           <li><span>PADI Open Water Diver</span><span class="cert-year">2023</span></li>
@@ -566,7 +582,7 @@
           <a class="btn btn--primary" href="mailto:caellumkennedy@gmail.com">
             <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg> caellumkennedy@gmail.com
           </a>
-          <a class="btn btn--ghost" href="/files/caellum_kennedy_CV.pdf" download="Caellum_Kennedy_CV.pdf">
+          <a class="btn btn--ghost" href="/files/Caellum_Kennedy_CV.pdf" download="Caellum_Kennedy_CV.pdf">
             <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg> Download CV
           </a>
         </div>
