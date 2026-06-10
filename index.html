@@ -2,367 +2,46 @@
 <html lang="en">
 
 <head>
-  <title>Caellum Kennedy | Full-Stack Software Engineer</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="CV of Caellum Kennedy — Full-Stack Software Engineer based in Galway, Ireland.">
-  <meta name="keywords" content="Software Engineer, CV, Caellum Kennedy, Galway, Ireland">
+  <title>Caellum Kennedy — Software Engineer | Galway, Ireland</title>
+  <meta name="description" content="Caellum Kennedy is a software engineer in Galway, Ireland — full-stack development, enterprise tooling at Boston Scientific, and reinforcement-learning research at the University of Galway.">
   <meta name="author" content="Caellum Kennedy">
-  <meta property="og:title" content="Caellum Kennedy | Full-Stack Software Engineer">
-  <meta property="og:description"
-    content="CV of Caellum Kennedy — Full-Stack Software Engineer based in Galway, Ireland.">
-  <meta property="og:image" content="https://caellumkennedy.com/images/myphoto.jpeg">
-  <meta property="og:url" content="https://caellumkennedy.com">
+  <link rel="canonical" href="https://caellumkennedy.com/">
+  <meta name="theme-color" content="#f6f5f1" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0e1513" media="(prefers-color-scheme: dark)">
+
+  <meta property="og:title" content="Caellum Kennedy — Software Engineer">
+  <meta property="og:description" content="Full-stack software engineer in Galway, Ireland. Enterprise tooling at Boston Scientific and reinforcement-learning game agents at the University of Galway.">
+  <meta property="og:image" content="https://caellumkennedy.com/images/og-image.jpg">
+  <meta property="og:url" content="https://caellumkennedy.com/">
   <meta property="og:type" content="website">
-  <link rel="canonical" href="https://caellumkennedy.com">
-  <link rel="icon" href="images/myphoto.jpeg" type="image/jpeg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Caellum Kennedy | Full-Stack Software Engineer">
-  <meta name="twitter:description" content="CV of Caellum Kennedy — Full-Stack Software Engineer based in Galway, Ireland.">
-  <meta name="twitter:image" content="https://caellumkennedy.com/images/myphoto.jpeg">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
-  <style>
-    /* Inter Font Setup */
-    @font-face {
-      font-family: 'Inter';
-      src: url('./fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype-variations');
-      font-weight: 100 900;
-      font-style: normal;
-      font-display: swap;
-    }
+  <meta name="twitter:title" content="Caellum Kennedy — Software Engineer">
+  <meta name="twitter:description" content="Full-stack software engineer in Galway, Ireland. Enterprise tooling at Boston Scientific and reinforcement-learning game agents at the University of Galway.">
+  <meta name="twitter:image" content="https://caellumkennedy.com/images/og-image.jpg">
 
-    @font-face {
-      font-family: 'Inter';
-      src: url('./fonts/Inter-Italic-VariableFont_opsz,wght.ttf') format('truetype-variations');
-      font-weight: 100 900;
-      font-style: italic;
-      font-display: swap;
-    }
+  <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+  <link rel="preload" as="image" href="/images/hero-2000.webp" imagesrcset="/images/hero-1100.webp 1100w, /images/hero-2000.webp 2000w" imagesizes="100vw" fetchpriority="high">
+  <link rel="stylesheet" href="/styles.css">
 
-    /* Fallback fonts for older browsers */
-    @font-face {
-      font-family: 'Inter';
-      src: url('./fonts/static/Inter_18pt-Regular.ttf') format('truetype');
-      font-weight: 400;
-      font-style: normal;
-      font-display: swap;
-    }
+  <script>
+    // Set theme before first paint to avoid a flash of the wrong theme.
+    (function () {
+      var stored = localStorage.getItem('theme');
+      var theme = stored || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
 
-    @font-face {
-      font-family: 'Inter';
-      src: url('./fonts/static/Inter_18pt-Medium.ttf') format('truetype');
-      font-weight: 500;
-      font-style: normal;
-      font-display: swap;
-    }
-
-    @font-face {
-      font-family: 'Inter';
-      src: url('./fonts/static/Inter_18pt-Bold.ttf') format('truetype');
-      font-weight: 700;
-      font-style: normal;
-      font-display: swap;
-    }
-
-    /* Base Styles */
-    html,
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    }
-
-    body {
-      background-image: url('/images/backgroundscenery.jpeg');
-      background-attachment: fixed;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      margin: 0;
-      padding: 0;
-      font-size: 16px;
-      position: relative;
-    }
-
-    /* Typography */
-    p {
-      font-size: 16px;
-      line-height: 1.6;
-    }
-
-    h2.w3-text-grey {
-      font-size: 24px;
-      font-weight: 500;
-      color: #4a5568;
-      margin-bottom: 12px;
-      padding-bottom: 0;
-    }
-
-    h5.w3-opacity {
-      font-size: 18px;
-      font-weight: 500;
-      color: #2d3748;
-      margin: 0;
-      padding-top: 8px;
-    }
-
-    h6.w3-text-teal {
-      font-size: 16px;
-      font-weight: 400;
-      margin: 4px 0;
-    }
-
-    /* Header */
-    .header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 1000;
-      background-color: #009688;
-      color: white;
-      padding: 16px;
-    }
-
-    .header-content {
-      max-width: 1400px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .header h1 {
-      margin: 0;
-      font-size: 28px;
-      font-weight: bold;
-    }
-
-    .header-buttons {
-      display: flex;
-      gap: 10px;
-    }
-
-    .header .w3-button {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    /* Main Content Layout */
-    .main-content {
-      margin-top: 100px;
-      padding: 0;
-      width: 100%;
-    }
-
-    .content-wrapper {
-      max-width: 1400px;
-      margin: 0 auto;
-      padding: 0 16px;
-    }
-
-    /* Grid Layout */
-    .w3-row-padding {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 16px;
-    }
-
-    .w3-third {
-      flex: 1 1 calc(33.33% - 16px);
-      box-sizing: border-box;
-    }
-
-    .w3-twothird {
-      flex: 1 1 calc(66.66% - 16px);
-      box-sizing: border-box;
-    }
-
-    .w3-half {
-      flex: 1 1 calc(50% - 8px);
-      box-sizing: border-box;
-    }
-
-    /* Cards and Containers */
-    .w3-card,
-    .w3-card-4 {
-      background-color: #fff;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16), 0 2px 4px rgba(0, 0, 0, 0.23);
-      margin-bottom: 16px;
-    }
-
-    .w3-container {
-      padding: 12px 16px;
-    }
-
-    .w3-container p {
-      margin: 8px 0;
-    }
-
-    .w3-container hr {
-      margin: 12px 0;
-    }
-
-    .w3-margin-bottom {
-      margin-bottom: 16px !important;
-    }
-
-    /* Profile Image and Name */
-    .w3-display-container {
-      position: relative;
-      width: 100%;
-    }
-
-    .w3-display-bottomleft {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      padding: 16px;
-      text-align: left;
-      width: 100%;
-    }
-
-    .w3-display-bottomleft h2 {
-      margin: 0;
-      color: white;
-      font-size: 24px;
-      text-shadow:
-        2px 2px 4px rgba(0, 0, 0, 0.5),
-        -1px -1px 0 #000,
-        1px -1px 0 #000,
-        -1px 1px 0 #000,
-        1px 1px 0 #000;
-    }
-
-    /* Footer */
-    .footer {
-      background-color: #009688;
-      color: white;
-      text-align: center;
-      padding: 16px;
-      margin-top: 32px;
-      width: 100%;
-      left: 0;
-      right: 0;
-    }
-
-    .footer-content {
-      max-width: 1400px;
-      margin: 0 auto;
-      padding: 0 16px;
-    }
-
-    .footer a {
-      color: white;
-      text-decoration: none;
-      margin: 0 8px;
-    }
-
-    /* Icons */
-    .fa-fw {
-      width: 1.25em;
-      text-align: center;
-    }
-
-    /* Buttons */
-    .w3-button {
-      cursor: pointer;
-    }
-
-    /* Dark Mode */
-    .w3-dark-grey {
-      background-color: #1a1a1a !important;
-    }
-
-    .w3-dark-grey .w3-white,
-    .w3-dark-grey .w3-card,
-    .w3-dark-grey .w3-card-4 {
-      background-color: #2d2d2d !important;
-      color: #ffffff !important;
-    }
-
-    .w3-dark-grey .w3-text-grey {
-      color: #e0e0e0 !important;
-    }
-
-    .w3-dark-grey .w3-text-teal {
-      color: #4db6ac !important;
-    }
-
-    .w3-dark-grey .w3-opacity {
-      color: #ffffff !important;
-      opacity: 0.9;
-    }
-
-    .dark-mode a {
-      color: #4da6ff !important;
-    }
-
-    /* Responsive Design */
-    @media (max-width: 768px) {
-
-      .w3-third,
-      .w3-twothird {
-        flex: 1 1 100%;
-      }
-
-      .content-wrapper {
-        padding: 0 8px;
-      }
-
-      .header-buttons {
-        flex-direction: column;
-        gap: 5px;
-      }
-
-      body {
-        background-attachment: scroll;
-      }
-    }
-
-    /* Course title links */
-    .course-link {
-      color: #1a73e8;
-      text-decoration: none;
-    }
-
-    .course-link:hover {
-      text-decoration: underline;
-    }
-
-    /* Print Styles */
-    @media print {
-      .header {
-        position: relative;
-      }
-
-      .main-content {
-        margin-top: 0;
-      }
-
-      .w3-card-4 {
-        box-shadow: none;
-      }
-
-      .w3-button {
-        display: none;
-      }
-    }
-  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Caellum Kennedy",
-    "jobTitle": "Full-Stack Software Engineer",
+    "jobTitle": "Software Engineer",
     "url": "https://caellumkennedy.com",
-    "image": "https://caellumkennedy.com/images/myphoto.jpeg",
+    "image": "https://caellumkennedy.com/images/og-image.jpg",
     "email": "caellumkennedy@gmail.com",
     "address": {
       "@type": "PostalAddress",
@@ -370,15 +49,10 @@
       "addressCountry": "IE"
     },
     "alumniOf": [
-      {
-        "@type": "CollegeOrUniversity",
-        "name": "University of Galway"
-      },
-      {
-        "@type": "CollegeOrUniversity",
-        "name": "Maynooth University"
-      }
+      { "@type": "CollegeOrUniversity", "name": "University of Galway" },
+      { "@type": "CollegeOrUniversity", "name": "Maynooth University" }
     ],
+    "knowsAbout": ["Software Engineering", "Full-Stack Development", "Reinforcement Learning", "Java", "Python", "C#", "Spring Boot", "React", "Power Apps"],
     "sameAs": [
       "https://github.com/reer123",
       "https://github.com/caellumkennedy",
@@ -388,261 +62,537 @@
   </script>
 </head>
 
-<body class="w3-light-grey">
+<body>
 
-  <!-- Fixed Header -->
-  <div class="header">
-    <div class="header-content">
-      <h1>Caellum Kennedy | Full-stack developer</h1>
-      <div class="header-buttons">
-        <button onclick="toggleDarkMode()" class="w3-button w3-white">
-          <i class="fas fa-moon"></i>
-          Toggle Theme
+  <!-- Inline SVG icon sprite -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.26 5.66.41.36.78 1.05.78 2.13 0 1.54-.01 2.78-.01 3.16 0 .31.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-arrow-down" viewBox="0 0 24 24"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2Z"/><path d="M14 2v6h6"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></symbol>
+    <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v2m6-2v2M9 20v2m6-2v2M2 9h2m-2 6h2M20 9h2m-2 6h2"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 2 10 5.5L12 13 2 7.5 12 2Z"/><path d="m2 12.5 10 5.5 10-5.5"/><path d="m2 17.5 10 5.5 10-5.5"/></symbol>
+    <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a4.5 4.5 0 0 0-6.06 5.27L2.5 17.71a2.12 2.12 0 1 0 3 3l6.13-6.14A4.5 4.5 0 0 0 17.7 9.3l-2.83 1.41-1.58-1.58L14.7 6.3Z"/></symbol>
+    <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16.24 7.76-2.12 6.36-6.36 2.12 2.12-6.36 6.36-2.12Z"/></symbol>
+    <symbol id="i-mountain" viewBox="0 0 24 24"><path d="m8 3 4 8 5-5 5 15H2L8 3Z"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7 7-7Z"/></symbol>
+    <symbol id="i-waves" viewBox="0 0 24 24"><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2v11Z"/><circle cx="12" cy="13" r="4"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <a class="brand" href="#top" aria-label="Back to top">Caellum Kennedy<span class="brand-dot">.</span></a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#experience">Experience</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#education">Education</a>
+        <a class="nav-link" href="/photography.html">Photography</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode">
+          <svg class="icon icon--moon" aria-hidden="true"><use href="#i-moon"/></svg>
+          <svg class="icon icon--sun" aria-hidden="true"><use href="#i-sun"/></svg>
         </button>
-        <a href="files/caellum_kennedy_CV.pdf" download="Caellum_Kennedy_CV.pdf" class="w3-button w3-white">
-          <i class="fas fa-download"></i>
-          Download CV
+        <a class="btn btn--primary header-cv" href="/files/caellum_kennedy_CV.pdf" download="Caellum_Kennedy_CV.pdf">
+          <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg> CV
         </a>
+        <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+          <svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg>
+        </button>
       </div>
     </div>
-  </div>
+  </header>
 
-  <!-- Main Content -->
-  <div class="main-content">
-    <div class="content-wrapper">
-      <!-- The Grid -->
-      <div class="w3-row-padding">
-        <!-- Left Column -->
-        <div class="w3-third">
-          <div class="w3-white w3-text-grey w3-card-4">
-            <div class="w3-display-container">
-              <img src="images/myphoto.jpeg" style="width:100%" alt="Caellum Kennedy" width="400" height="400">
-              <div class="w3-display-bottomleft w3-container w3-text-black">
-                <h2 class="outlined-text">Caellum Kennedy</h2>
-              </div>
-            </div>
-            <div class="w3-container">
-              <p><i class="fas fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Software Engineer</p>
-              <p><i class="fas fa-location-dot fa-fw w3-margin-right w3-large w3-text-teal"></i>Galway, Ireland</p>
-              <p><i class="fas fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i><a
-                  href="mailto:caellumkennedy@gmail.com"
-                  style="color:inherit; text-decoration:none;">caellumkennedy@gmail.com</a></p>
-              <hr>
+  <main id="main">
 
-              <p class="w3-large"><b><i class="fas fa-star fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
-              <p>Cloud Computing (Firebase and Sharepoint List experience)</p>
-              <p>Microsoft Power Applications (Power Apps, Power BI, Sharepoint, etc.)</p>
-              <p>Microsoft Office (Excel, Word, Powerpoint etc.)</p>
-              <br>
+    <!-- ============ Hero ============ -->
+    <section class="hero" id="top">
+      <img class="hero-bg" src="/images/hero-2000.webp"
+        srcset="/images/hero-1100.webp 1100w, /images/hero-2000.webp 2000w" sizes="100vw"
+        alt="Sunlight breaking through clouds over the lakes and mountains of Connemara, seen from Leenane Hill"
+        fetchpriority="high">
+      <div class="hero-scrim" aria-hidden="true"></div>
 
-              <p class="w3-large w3-text-theme"><b><i class="fas fa-code fa-fw w3-margin-right w3-text-teal"></i>Coding
-                  Languages</b></p>
-              <p>HTML/CSS, PowerFx</p>
-              <p>Java, C#, Python</p>
-              <p>SQL, JavaScript</p>
-              <p>JSON, R, MATLAB</p>
-              <p>SpringBoot, REACT, Node.js</p>
-              <br>
+      <div class="hero-content container">
+        <p class="hero-eyebrow">
+          <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>
+          Software Engineer · Galway, Ireland
+        </p>
+        <h1>Caellum Kennedy</h1>
+        <p class="hero-tagline">I build software — from <strong>enterprise tools at Boston Scientific</strong> to
+          <strong>reinforcement-learning agents</strong> that teach themselves strategy.</p>
+        <p class="hero-sub">BSc Computer Science &amp; IT, University of Galway · Class of 2026 · Projected First Class Honours</p>
 
-              <p class="w3-large w3-text-theme"><b><i
-                    class="fas fa-certificate fa-fw w3-margin-right w3-text-teal"></i>Certifications</b></p>
-              <p>Mountain Skills 2 <b>[Mountaineering Ireland] [2024]</b></p>
-              <p>Remote Emergency Care 3 <b>[Mountaineering Ireland] [2024]</b></p>
-              <p>Pool Lifeguard Certifate <b>[2023]</b></p>
-              <p>Swim Teacher Certificate <b>[2022]</b></p>
-              <p>PADI Open Water Diver Certificate <b>[2023]</b></p>
-              <br>
-
-              <!-- Social Media Links -->
-              <p class="w3-large w3-text-theme"><b><i class="fas fa-link fa-fw w3-margin-right w3-text-teal"></i>Social
-                  Media</b></p>
-              <p>
-                <a href="https://github.com/reer123" target="_blank" rel="noopener noreferrer" class="w3-text-teal"><i class="fab fa-github"></i>
-                  GitHub - Personal</a>
-              </p>
-              <p>
-                <a href="https://github.com/caellumkennedy" target="_blank" rel="noopener noreferrer" class="w3-text-teal"><i
-                    class="fab fa-github"></i> GitHub - BSC</a>
-              </p>
-              <p>
-                <a href="https://www.linkedin.com/in/caellum-kennedy-2167743b9/" target="_blank" rel="noopener noreferrer" class="w3-text-teal"><i class="fab fa-linkedin"></i>
-                  LinkedIn</a>
-              </p>
-              <br>
-            </div>
-          </div><br>
+        <div class="hero-cta">
+          <a class="btn btn--primary" href="#projects">
+            See my work <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="/files/caellum_kennedy_CV.pdf" download="Caellum_Kennedy_CV.pdf">
+            <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg> Download CV
+          </a>
         </div>
 
-        <!-- Right Column -->
-        <div class="w3-twothird">
-          <!-- About -->
-          <div class="w3-container w3-card w3-white w3-margin-bottom">
-            <h2 class="w3-text-grey w3-padding-16"><i
-                class="fas fa-user fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>About</h2>
-            <div class="w3-container">
-              <p>Final-year Computer Science student at the University of Galway (projected 1:1) with hands-on industry
-                experience as a Software Engineer at Boston Scientific. Passionate about building clean, functional
-                software from full-stack web applications to AI game agents.</p>
-            </div>
-          </div>
-
-          <!-- Work Experience -->
-          <div class="w3-container w3-card w3-white w3-margin-bottom">
-            <h2 class="w3-text-grey w3-padding-16"><i
-                class="fas fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
-            <div class="w3-container">
-              <h5 class="w3-opacity"><b>Placement Student : Boston Scientific</b></h5>
-              <h6 class="w3-text-teal"><i class="fas fa-calendar fa-fw w3-margin-right"></i>Jan 2025 - Aug 2025</h6>
-              <p>Placement Student with Boston Scientific working as a Software Engineer maintaining, updating, and
-                creating applications for use by the Software Quality Engineer team in the Validations department.</p>
-              <p>- Performed essential maintenance for the Software Validations department, updating and optimizing
-                existing applications for the department.</p>
-              <p>- Created extensive documentation for existing programs to help future software engineers perform
-                essential maintenance.</p>
-            </div>
-            <div class="w3-container">
-              <h5 class="w3-opacity"><b>University Projects : University of Galway</b></h5>
-              <h6 class="w3-text-teal"><i class="fas fa-calendar fa-fw w3-margin-right"></i>Sep 2023 - Jan 2025</h6>
-              <p>Created a web application using SpringBoot and REACT on a Firebase database to track users' Spotify
-                statistics utilizing cloud storage, Spotify's API, and Last FM's API.</p>
-            </div>
-            <div class="w3-container">
-              <h5 class="w3-opacity"><b>Lifeguard : Bay Sports</b></h5>
-              <h6 class="w3-text-teal"><i class="fas fa-calendar fa-fw w3-margin-right"></i>May 2024 - Aug 2024</h6>
-              <p>Part-time lifeguard leading schools tours around Hodson Bay's Bay Sports.</p>
-            </div>
-            <div class="w3-container">
-              <h5 class="w3-opacity"><b>Lifeguard/Swim Teacher : Roscommon Leisure Centre</b></h5>
-              <h6 class="w3-text-teal"><i class="fas fa-calendar fa-fw w3-margin-right"></i>May 2021 - Sep 2023</h6>
-              <p>Full-time Lifeguard and Swim Teacher in Roscommon Leisure Centre. Conducting swimming lessons,
-                performing routine site maintenance, and cleaning.</p>
-            </div>
-          </div>
-
-          <!-- Education -->
-          <div class="w3-container w3-card w3-white w3-margin-bottom">
-            <h2 class="w3-text-grey w3-padding-16"><i
-                class="fas fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
-            <div class="w3-container">
-              <h5 class="w3-opacity"><b><a
-                    href="https://www.universityofgalway.ie/courses/undergraduate-courses/computer-science-and-information-technology.html"
-                    target="_blank" rel="noopener noreferrer" class="course-link">BSc Computer Science and Information Technology</a></b></h5>
-              <h6 class="w3-text-teal">University of Galway 2023 - Current</h6>
-              <p>Projected Results: 1:1</p>
-              <p>Final Year Project: The Effect of Historical Checkpoints on a Real Time Strategy Game Agent Training
-                <a href="files/Final Year Project.pdf" download><img src="files/download.png" alt="Download"
-                    style="width:20px; height:20px; vertical-align:middle; margin-left:6px;"></a>
-              </p>
-            </div>
-            <div class="w3-container">
-              <h5 class="w3-opacity"><b><a
-                    href="https://www.maynoothuniversity.ie/study-maynooth/undergraduate-studies/courses/bsc-physics-astrophysics"
-                    target="_blank" rel="noopener noreferrer" class="course-link">BSc Physics with Astrophysics</a></b></h5>
-              <h6 class="w3-text-teal">Maynooth University 2018 - 2022</h6>
-              <p>Transferred to University of Galway in the third year of the degree.</p>
-            </div>
-            <div class="w3-container">
-              <h5 class="w3-opacity"><b>Leaving Certificate</b></h5>
-              <h6 class="w3-text-teal">CBS Roscommon 2013 - 2018</h6>
-              <p>Results (456 points):</p>
-              <div class="w3-row-padding">
-                <div class="w3-half">
-                  <p>Irish: O4</p>
-                  <p>English: H3</p>
-                  <p>Mathematics: H4</p>
-                  <p>Geography: H3</p>
-                </div>
-                <div class="w3-half">
-                  <p>Spanish: H6</p>
-                  <p>Physics: H3</p>
-                  <p>Business: H2</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Portfolio Section -->
-          <div class="w3-container w3-card w3-white w3-margin-bottom">
-            <h2 class="w3-text-grey w3-padding-16"><i
-                class="fas fa-folder fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Portfolio</h2>
-            <div class="w3-row-padding">
-              <div class="w3-half">
-                <div class="w3-card">
-                  <img src="images/MMScreen.PNG" alt="Melody Metrics screenshot" style="width:100%" loading="lazy">
-                  <div class="w3-container">
-                    <h5>Melody Metrics</h5>
-                    <p><b>[SPRING BOOT / REACT]</b></p>
-                    <p>Melody Metrics is a SprintBoot REACT web application which utilises the Spotify API to display
-                      statistics on a user's Spotify music history.
-                      It also displays LastFM trending songs.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="w3-half">
-                <div class="w3-card">
-                  <img src="images/best4.PNG" alt="Boston Scientific project screenshot" style="width:100%" loading="lazy">
-                  <div class="w3-container">
-                    <h5>Boston Scientific</h5>
-                    <p><b>[POWER APPS / SHAREPOINT LISTS]</b></p>
-                    <p>Optimisations and upgrades to software applications in the Software Validations department of
-                      Boston Scientific. Improved
-                      loading times from 60 seconds to 5 seconds.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="w3-card" style="width:100%;">
-                <video controls preload="none" style="width:100%; display:block;">
-                  <source src="files/rl-video-step-0-to-step-50000.mp4" type="video/mp4">
-                </video>
-                <div class="w3-container">
-                  <h5>MicroRTS Agent — FYP Demo</h5>
-                  <p><b>[PYTHON / REINFORCEMENT LEARNING]</b></p>
-                  <p>Demonstration of a reinforcement learning agent trained using historical checkpoints playing against
-                    CoacAI in MicroRTS, as part of the final year project <em>The Effect of Historical Checkpoints on a
-                      Real Time Strategy Game Agent Training</em>.</p>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="hero-social">
+          <a href="https://github.com/reer123" target="_blank" rel="noopener noreferrer" aria-label="GitHub (personal)">
+            <svg class="icon icon--fill" aria-hidden="true"><use href="#i-github"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/caellum-kennedy-2167743b9/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg class="icon icon--fill" aria-hidden="true"><use href="#i-linkedin"/></svg>
+          </a>
+          <a href="mailto:caellumkennedy@gmail.com" aria-label="Email Caellum">
+            <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>
+          </a>
         </div>
       </div>
 
-      <!-- Footer -->
-      <div class="footer">
-        <div class="footer-content">
-          <p>© 2025 Caellum Kennedy (Background Image: 2025 Leenane Hill by Caellum Kennedy)</p>
-          <p>
-            <a href="https://github.com/reer123" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub - Personal</a> |
-            <a href="https://github.com/caellumkennedy" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub - BSC</a> |
-            <a href="https://www.linkedin.com/in/caellum-kennedy-2167743b9/" target="_blank" rel="noopener noreferrer"><i
-                class="fab fa-linkedin"></i> LinkedIn</a> |
-            <a href="mailto:caellumkennedy@gmail.com"><i class="fas fa-envelope"></i> Email Me</a>
-          </p>
+      <a class="scroll-cue" href="#about" aria-label="Scroll to About section">
+        <svg class="icon" aria-hidden="true"><use href="#i-arrow-down"/></svg>
+      </a>
+      <p class="hero-credit">Leenane Hill, Connemara — photographed by me</p>
+    </section>
+
+    <!-- ============ About ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-eyebrow">About</span>
+          <h2>Equally at home in a codebase or on a ridgeline.</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p>I'm a software engineer from the west of Ireland, finishing a <strong>BSc in Computer Science &amp;
+                IT at the University of Galway</strong> with a projected First Class Honours. Before computer science I
+              studied <strong>physics with astrophysics at Maynooth</strong> — which is where I learned to break hard
+              problems down with maths, and discovered I enjoyed writing the simulations more than running them.</p>
+            <p>I spent nine months at <strong>Boston Scientific</strong> as a placement software engineer in the
+              Software Validations department — shipping to a live production environment used across multiple
+              departments, untangling and documenting undocumented legacy systems, and making one key application load
+              twelve times faster.</p>
+            <p>My final-year research trained <strong>reinforcement-learning agents</strong> to play a real-time
+              strategy game, using historical self-play to stop them forgetting their own best strategies. It's
+              projected to earn 85%.</p>
+            <p>Away from the keyboard I lead hikes of 20+ students through the Connemara mountains with the University
+              of Galway Mountaineering Club, volunteer with the MADRA dog rescue, and spent years as a lifeguard and
+              swim teacher. Both photos on this page are mine, taken on club hikes — there's plenty more in
+              <a href="/photography.html">my photography gallery</a>.</p>
+          </div>
+
+          <figure class="about-photo reveal">
+            <img src="/images/ridge-1000.webp" width="1000" height="625"
+              alt="Two hikers celebrating on a rocky ridge in thick mist in the Connemara mountains" loading="lazy">
+            <figcaption>
+              <svg class="icon" aria-hidden="true"><use href="#i-camera"/></svg>
+              On the ridge with the Mountaineering Club, Connemara
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="stats reveal-stagger">
+          <div class="stat"><b>1:1</b><span>projected degree grade, BSc Computer Science &amp; IT</span></div>
+          <div class="stat"><b>9 mo</b><span>industry placement at Boston Scientific</span></div>
+          <div class="stat"><b>12&times;</b><span>faster load time after optimising a key validations app</span></div>
+          <div class="stat"><b>80 M</b><span>training steps in my reinforcement-learning research</span></div>
         </div>
       </div>
+    </section>
+
+    <!-- ============ Experience ============ -->
+    <section class="section section--sunken" id="experience">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-eyebrow">Experience</span>
+          <h2>Where I've worked.</h2>
+        </div>
+
+        <ol class="timeline">
+          <li class="timeline-item reveal">
+            <div class="timeline-meta">
+              <h3>Software Engineer <span class="timeline-org">· Boston Scientific</span></h3>
+              <span class="timeline-dates">Jan 2025 — Sep 2025 · Galway</span>
+            </div>
+            <p>Placement software engineer in the Software Validations department, building and maintaining the
+              internal tooling used by Software Quality Engineers.</p>
+            <ul>
+              <li>Built internal applications with Power Apps on SharePoint, used in production across multiple
+                departments.</li>
+              <li>Optimised an existing department application, cutting its loading time from ~60 seconds to ~5
+                seconds.</li>
+              <li>Maintained the C# (MVC) web application managing the Software Validations department, and wrote the
+                documentation it never had so future engineers wouldn't start from zero.</li>
+              <li>Coordinated releases with department leads — scheduling update windows and downtime for changes to a
+                live production environment.</li>
+            </ul>
+            <ul class="tags">
+              <li class="tag">Power Apps</li>
+              <li class="tag">SharePoint</li>
+              <li class="tag">C# / MVC</li>
+              <li class="tag">Power BI</li>
+            </ul>
+          </li>
+
+          <li class="timeline-item reveal">
+            <div class="timeline-meta">
+              <h3>Lifeguard <span class="timeline-org">· Bay Sports, Hodson Bay</span></h3>
+              <span class="timeline-dates">May 2024 — Aug 2024</span>
+            </div>
+            <p>Lifeguard at Ireland's largest inflatable water park, leading school tours and keeping groups safe on
+              open water.</p>
+          </li>
+
+          <li class="timeline-item reveal">
+            <div class="timeline-meta">
+              <h3>Lifeguard &amp; Swim Teacher <span class="timeline-org">· Roscommon Leisure Centre</span></h3>
+              <span class="timeline-dates">2021 — 2023</span>
+            </div>
+            <p>Taught swimming lessons to individuals and groups of all ages and abilities, and enforced pool safety as
+              a certified lifeguard.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ Projects ============ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-eyebrow">Projects</span>
+          <h2>Things I've built.</h2>
+          <p class="section-lede">A research project I'm proud of, and the software around it.</p>
+        </div>
+
+        <!-- Featured: Final Year Project -->
+        <article class="featured reveal">
+          <div class="featured-media">
+            <video controls preload="none" poster="/images/fyp-poster.jpg" width="1280" height="800"
+              aria-label="Video of the trained reinforcement-learning agent playing MicroRTS against CoacAI">
+              <source src="/files/rl-video-step-0-to-step-50000.mp4" type="video/mp4">
+              Your browser doesn't support embedded video.
+              <a href="/files/rl-video-step-0-to-step-50000.mp4">Download the video instead.</a>
+            </video>
+          </div>
+          <div class="featured-body">
+            <p class="featured-kicker">Featured · Final Year Project</p>
+            <h3>Teaching a game agent not to forget</h3>
+            <p>In standard self-play, reinforcement-learning agents develop strong strategies — then overwrite them
+              through continued training and collapse back to baseline. My research, <em>The Effect of Historical
+                Checkpoints on a Real-Time Strategy Game Agent Training</em>, forces the agent to keep competing against
+              frozen copies of its past selves, weighted towards the checkpoints it struggles with most.</p>
+            <p>Over 80 million training steps in MicroRTS, historical self-play prevented the prolonged performance
+              collapses seen in standard self-play and held consistently higher TrueSkill ratings. The video shows the
+              trained agent (blue) playing against competition bot CoacAI.</p>
+            <div class="featured-facts">
+              <div><b>80M+</b><span>training steps</span></div>
+              <div><b>85%</b><span>projected grade</span></div>
+              <div><b>TrueSkill</b><span>evaluation rating</span></div>
+            </div>
+            <ul class="tags">
+              <li class="tag">Python</li>
+              <li class="tag">Reinforcement Learning</li>
+              <li class="tag">PPO</li>
+              <li class="tag">Self-Play</li>
+              <li class="tag">MicroRTS</li>
+            </ul>
+            <div class="featured-actions">
+              <a class="btn btn--primary" href="/files/Final Year Project.pdf" download>
+                <svg class="icon" aria-hidden="true"><use href="#i-file"/></svg> Read the report
+              </a>
+            </div>
+          </div>
+
+          <div class="results">
+            <div class="results-head">
+              <h4>Results at a glance</h4>
+              <div class="results-tabs" aria-label="Compare the two training runs">
+                <button class="results-tab" type="button" data-mode="standard" aria-pressed="false">Standard
+                  self-play</button>
+                <button class="results-tab is-active" type="button" data-mode="historical" aria-pressed="true">Historical
+                  self-play</button>
+              </div>
+            </div>
+            <p class="results-lede">Two identical training runs — same agent, same parameters, ~80&nbsp;million steps.
+              The only difference: whether the agent also trains against frozen copies of its past selves.</p>
+            <div class="results-stage">
+              <img class="results-chart" data-mode="standard" src="/images/fyp-standard.webp" width="1128" height="555"
+                alt="TrueSkill rating over 80 million training steps without historical checkpoints — the rolling average plateaus around 27 to 31 with repeated dips, peaking at 34.8"
+                loading="lazy" decoding="async">
+              <img class="results-chart is-active" data-mode="historical" src="/images/fyp-historical.webp" width="1128"
+                height="555"
+                alt="TrueSkill rating over 80 million training steps with historical checkpoints — the rolling average keeps climbing to around 34 and holds, peaking at 36.7 near the CoacAI reference line"
+                loading="lazy" decoding="async">
+            </div>
+            <p class="results-note" data-mode="standard" hidden><strong>Without historical checkpoints:</strong> the
+              rating plateaus around 27–31 and repeatedly dips as the agent overwrites its own best strategies. Peak:
+              TrueSkill 34.8.</p>
+            <p class="results-note is-active" data-mode="historical"><strong>With historical checkpoints:</strong> the
+              rating keeps climbing and holds consistently higher through the second half of training — peak 36.7,
+              closing in on competition bot CoacAI (top dashed line).</p>
+            <p class="results-credit">Evaluation charts taken directly from the report — rolling TrueSkill rating vs
+              training steps, 83 evaluations per run. Dashed lines mark fixed reference bots.</p>
+          </div>
+        </article>
+
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <div class="project-thumb">
+              <img src="/images/melody-metrics.webp" width="1200" height="565"
+                alt="Melody Metrics web app showing trending songs from Last.fm" loading="lazy">
+            </div>
+            <div class="project-body">
+              <h3>Melody Metrics</h3>
+              <p>A full-stack web app that breaks down your Spotify listening history and surfaces trending tracks from
+                Last.fm — Spring Boot REST API on the back, React on the front, Firebase as the database layer.</p>
+              <ul class="tags">
+                <li class="tag">Spring Boot</li>
+                <li class="tag">React</li>
+                <li class="tag">Firebase</li>
+                <li class="tag">Spotify API</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-thumb">
+              <img src="/images/best4.webp" width="1200" height="565"
+                alt="Best4 Optimisation internal Power Apps application at Boston Scientific (blurred for confidentiality)"
+                loading="lazy">
+            </div>
+            <div class="project-body">
+              <h3>Validations Tooling — Boston Scientific</h3>
+              <p>Internal quality-and-compliance applications for the Software Validations department, built on Power
+                Apps and SharePoint. Rebuilt the data layer of a core app to cut load times from ~60s to ~5s.</p>
+              <ul class="tags">
+                <li class="tag">Power Apps</li>
+                <li class="tag">SharePoint</li>
+                <li class="tag">PowerFx</li>
+              </ul>
+              <p class="project-note">Screenshot intentionally blurred — internal enterprise software.</p>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-thumb project-thumb--code" aria-hidden="true">
+              <svg class="icon"><use href="#i-code"/></svg>
+            </div>
+            <div class="project-body">
+              <h3>This Website</h3>
+              <p>Designed and hand-coded from scratch — semantic HTML, modern CSS and a few hundred bytes of vanilla
+                JavaScript. No frameworks, no build step, self-hosted fonts, and photography from my own hikes.</p>
+              <ul class="tags">
+                <li class="tag">HTML</li>
+                <li class="tag">CSS</li>
+                <li class="tag">JavaScript</li>
+                <li class="tag">GitHub Pages</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/Caellum-Kennedy/caellumkennedy.github.io" target="_blank" rel="noopener noreferrer">
+                  View source <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Skills ============ -->
+    <section class="section section--sunken" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-eyebrow">Skills</span>
+          <h2>What I work with.</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-group reveal">
+            <h3><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg> Languages</h3>
+            <ul class="tags">
+              <li class="tag">Java</li>
+              <li class="tag">Python</li>
+              <li class="tag">C#</li>
+              <li class="tag">C</li>
+              <li class="tag">JavaScript</li>
+              <li class="tag">SQL (MySQL / MariaDB)</li>
+              <li class="tag">HTML / CSS</li>
+              <li class="tag">PowerFx</li>
+              <li class="tag">R</li>
+              <li class="tag">MATLAB</li>
+            </ul>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3><svg class="icon" aria-hidden="true"><use href="#i-layers"/></svg> Frameworks &amp; Libraries</h3>
+            <ul class="tags">
+              <li class="tag">Spring Boot</li>
+              <li class="tag">React</li>
+              <li class="tag">Vue.js</li>
+              <li class="tag">Node.js</li>
+            </ul>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3><svg class="icon" aria-hidden="true"><use href="#i-wrench"/></svg> Platforms &amp; Tools</h3>
+            <ul class="tags">
+              <li class="tag">Git / GitHub</li>
+              <li class="tag">Firebase</li>
+              <li class="tag">Power Apps</li>
+              <li class="tag">Power BI</li>
+              <li class="tag">SharePoint</li>
+              <li class="tag">Microsoft Office</li>
+            </ul>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3><svg class="icon" aria-hidden="true"><use href="#i-cpu"/></svg> Practices &amp; Concepts</h3>
+            <ul class="tags">
+              <li class="tag">Full-stack development</li>
+              <li class="tag">REST APIs</li>
+              <li class="tag">Agile</li>
+              <li class="tag">MVC architecture</li>
+              <li class="tag">Reinforcement learning</li>
+              <li class="tag">Technical documentation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Education ============ -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-eyebrow">Education</span>
+          <h2>Where I studied.</h2>
+        </div>
+
+        <div class="edu-grid">
+          <div class="edu-card reveal">
+            <span class="edu-years">2023 — 2026</span>
+            <h3><a href="https://www.universityofgalway.ie/courses/undergraduate-courses/computer-science-and-information-technology.html"
+                target="_blank" rel="noopener noreferrer">BSc (Hons) Computer Science &amp; IT</a></h3>
+            <p class="edu-school">University of Galway</p>
+            <span class="edu-badge">Projected First Class Honours (1:1)</span>
+            <p>Final year project on reinforcement learning in real-time strategy games, supervised by Dr. Patrick
+              Mannion — projected 85%.</p>
+          </div>
+
+          <div class="edu-card reveal">
+            <span class="edu-years">2018 — 2022</span>
+            <h3><a href="https://www.maynoothuniversity.ie/study-maynooth/undergraduate-studies/courses/bsc-physics-astrophysics"
+                target="_blank" rel="noopener noreferrer">BSc Physics with Astrophysics</a></h3>
+            <p class="edu-school">Maynooth University</p>
+            <p>Three years of physics, mathematics and computational modelling before transferring into computer
+              science at Galway — the place I learned to think in systems.</p>
+          </div>
+
+          <div class="edu-card reveal">
+            <span class="edu-years">2013 — 2018</span>
+            <h3>Leaving Certificate</h3>
+            <p class="edu-school">CBS Roscommon</p>
+            <p>456 points — including H2 Business, H3 Physics and H3 Geography.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Beyond the code ============ -->
+    <section class="section section--sunken" id="beyond">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-eyebrow">Beyond the code</span>
+          <h2>Mountains, dogs &amp; open water.</h2>
+        </div>
+
+        <div class="beyond-grid">
+          <div class="beyond-card reveal">
+            <svg class="icon" aria-hidden="true"><use href="#i-mountain"/></svg>
+            <h3>Hike Leader</h3>
+            <p>I lead groups of 20+ students through the Connemara mountains with the University of Galway
+              Mountaineering Club — planning routes on untrailed terrain, reading the weather, and getting everyone
+              home. Mountain Skills 2 and Remote Emergency Care 3 certified.</p>
+          </div>
+
+          <div class="beyond-card reveal">
+            <svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg>
+            <h3>Dog Rescue Volunteer</h3>
+            <p>I volunteer with MADRA, a dog rescue charity in Galway, and have adopted two rescue dogs along the
+              way.</p>
+          </div>
+
+          <div class="beyond-card reveal">
+            <svg class="icon" aria-hidden="true"><use href="#i-waves"/></svg>
+            <h3>In the Water</h3>
+            <p>Years as a lifeguard and swim teacher, plus a PADI Open Water diving certification. If it involves
+              water, I've probably supervised it, taught it, or jumped into it.</p>
+          </div>
+        </div>
+
+        <ul class="cert-list reveal">
+          <li><span>Mountain Skills 2 — Mountaineering Ireland</span><span class="cert-year">2024</span></li>
+          <li><span>Remote Emergency Care 3 — Mountaineering Ireland</span><span class="cert-year">2024</span></li>
+          <li><span>PADI Open Water Diver</span><span class="cert-year">2023</span></li>
+          <li><span>Pool Lifeguard Certificate</span><span class="cert-year">2023</span></li>
+          <li><span>Swim Teacher Certificate</span><span class="cert-year">2022</span></li>
+          <li><span>Full Irish Driving Licence</span><span class="cert-year">&nbsp;</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ Contact ============ -->
+    <section class="contact" id="contact">
+      <div class="container reveal">
+        <span class="section-eyebrow">Contact</span>
+        <h2>Let's build something.</h2>
+        <p class="section-lede">I'm finishing my degree at the University of Galway and looking for my next
+          opportunity. If you think I'd be a good fit for your team, I'd love to hear from you.</p>
+        <div class="contact-actions">
+          <a class="btn btn--primary" href="mailto:caellumkennedy@gmail.com">
+            <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg> caellumkennedy@gmail.com
+          </a>
+          <a class="btn btn--ghost" href="/files/caellum_kennedy_CV.pdf" download="Caellum_Kennedy_CV.pdf">
+            <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg> Download CV
+          </a>
+        </div>
+        <div class="contact-social">
+          <a href="https://github.com/reer123" target="_blank" rel="noopener noreferrer" aria-label="GitHub (personal)">
+            <svg class="icon icon--fill" aria-hidden="true"><use href="#i-github"/></svg>
+          </a>
+          <a href="https://github.com/caellumkennedy" target="_blank" rel="noopener noreferrer" aria-label="GitHub (college)">
+            <svg class="icon icon--fill" aria-hidden="true"><use href="#i-github"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/caellum-kennedy-2167743b9/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg class="icon icon--fill" aria-hidden="true"><use href="#i-linkedin"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year">2026</span> Caellum Kennedy. Photography my own — <a href="/photography.html">see the gallery</a>.</p>
+      <p>Hand-built, no frameworks · <a href="https://github.com/Caellum-Kennedy/caellumkennedy.github.io" target="_blank" rel="noopener noreferrer">view source</a></p>
     </div>
-  </div>
+  </footer>
 
-  <!-- Dark Mode Script remains the same -->
-  <script>
-    function toggleDarkMode() {
-      document.body.classList.toggle("w3-dark-grey");
-      document.body.classList.toggle("w3-light-grey");
-      document.body.classList.toggle("dark-mode");
-
-      const isDarkMode = document.body.classList.contains("w3-dark-grey");
-      localStorage.setItem("darkMode", isDarkMode);
-    }
-
-    const savedDarkMode = localStorage.getItem("darkMode") === "true";
-    if (savedDarkMode) {
-      document.body.classList.add("w3-dark-grey");
-      document.body.classList.add("dark-mode");
-      document.body.classList.remove("w3-light-grey");
-    }
-  </script>
+  <script src="/site.js" defer></script>
 
 </body>
 

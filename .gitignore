@@ -1,0 +1,19 @@
+CLAUDE.md
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.suo
+*.user
+
+# Claude Code
+.claude/
+
+# Original camera files — only the optimised web/ and thumbs/ versions are deployed
+images/photography/*.jpg
+images/photography/*.JPG
