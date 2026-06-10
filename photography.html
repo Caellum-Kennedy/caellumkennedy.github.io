@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Photography — Caellum Kennedy</title>
+  <meta name="description" content="Photography by Caellum Kennedy — landscapes from the Connemara mountains, Galway's streets and harbour, and the wildlife in between.">
+  <meta name="author" content="Caellum Kennedy">
+  <link rel="canonical" href="https://caellumkennedy.com/photography.html">
+  <meta name="theme-color" content="#f6f5f1" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0e1513" media="(prefers-color-scheme: dark)">
+
+  <meta property="og:title" content="Photography — Caellum Kennedy">
+  <meta property="og:description" content="Landscapes from the Connemara mountains, Galway's streets and harbour, and the wildlife in between.">
+  <meta property="og:image" content="https://caellumkennedy.com/images/photography/web/p1090813.webp">
+  <meta property="og:url" content="https://caellumkennedy.com/photography.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Photography — Caellum Kennedy">
+  <meta name="twitter:description" content="Landscapes from the Connemara mountains, Galway's streets and harbour, and the wildlife in between.">
+  <meta name="twitter:image" content="https://caellumkennedy.com/images/photography/web/p1090813.webp">
+
+  <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+
+  <script>
+    // Set theme before first paint to avoid a flash of the wrong theme.
+    (function () {
+      var stored = localStorage.getItem('theme');
+      var theme = stored || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+</head>
+
+<body>
+
+  <!-- Inline SVG icon sprite -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+    <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2v11Z"/><circle cx="12" cy="13" r="4"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="site-header" data-solid>
+    <div class="container">
+      <a class="brand" href="/">Caellum Kennedy<span class="brand-dot">.</span></a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a class="nav-link" href="/#about">About</a>
+        <a class="nav-link" href="/#experience">Experience</a>
+        <a class="nav-link" href="/#projects">Projects</a>
+        <a class="nav-link" href="/#skills">Skills</a>
+        <a class="nav-link" href="/#education">Education</a>
+        <a class="nav-link" href="/photography.html" aria-current="true">Photography</a>
+        <a class="nav-link" href="/#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode">
+          <svg class="icon icon--moon" aria-hidden="true"><use href="#i-moon"/></svg>
+          <svg class="icon icon--sun" aria-hidden="true"><use href="#i-sun"/></svg>
+        </button>
+        <a class="btn btn--primary header-cv" href="/files/caellum_kennedy_CV.pdf" download="Caellum_Kennedy_CV.pdf">
+          <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg> CV
+        </a>
+        <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+          <svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-head">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-eyebrow"><svg class="icon" aria-hidden="true"><use href="#i-camera"/></svg> Photography</span>
+          <h1>Through my lens.</h1>
+          <p class="section-lede">Landscapes from the Connemara hills, Galway's streets and harbour, and the wildlife
+            in between — all shot by me. Click any photo to view it full size.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery-section">
+      <div class="container">
+        <div class="gallery" id="gallery">
+          <figure class="ph"><a class="ph-open" href="/images/photography/web/p1090797.webp"><img src="/images/photography/thumbs/p1090797.webp" width="1800" height="806" alt="A lake cradled between hillsides in the Connemara mountains" loading="lazy" decoding="async"></a></figure>
+          <figure class="ph"><a class="ph-open" href="/images/photography/web/p1090805.webp"><img src="/images/photography/thumbs/p1090805.webp" width="1800" height="886" alt="A hiker pausing on a green hillside to take in the valley below" loading="lazy" decoding="async"></a></figure>
+          <figure class="ph"><a class="ph-open" href="/images/photography/web/p1090813.webp"><img src="/images/photography/thumbs/p1090813.webp" width="1800" height="1350" alt="Green fields running down to Leenane village on Killary Harbour" loading="lazy" decoding="async"></a></figure>
+          <figure class="ph"><a class="ph-open" href="/images/photography/web/p1090816.webp"><img src="/images/photography/thumbs/p1090816.webp" width="1800" height="618" alt="Panorama of Leenane village on the shore of Killary Harbour" loading="lazy" decoding="async"></a></figure>
+          <figure class="ph"><a class="ph-open" href="/images/photography/web/p1090825.webp"><img src="/images/photography/thumbs/p1090825.webp" width="1350" height="1800" alt="Looking down a hazy valley from high on the ridge" loading="lazy" decoding="async"></a></figure>
+          <figure class="ph"><a class="ph-open" href="/images/photography/web/p1090835.webp"><img src="/images/photography/thumbs/p1090835.webp" width="1800" height="781" alt="Mountain panorama in Connemara" loading="lazy" decoding="async"></a></figure>
+          <figure class="ph"><a class="ph-open" href="/images/photography/web/p1090837.webp"><img src="/images/photography/thumbs/p1090837.webp" width="1800" height="704" alt="Moody lakes and hills under low cloud, seen from a ridgeline" loading="lazy" decoding="async"></a></figure>
+          <figure class="ph"><a class="ph-open" href="/images/photography/web/p1090838.webp"><img src="/images/photography/thumbs/p1090838.webp" width="1800" height="428" alt="Wide panorama of lakes and low islands in soft mist" loading="lazy" decoding="async"></a></figure>
+          <figure class="ph"><a class="ph-open" href="/images/photography/web/p1090843.webp"><img src="/images/photography/thumbs/p1090843.webp" width="1800" height="764" alt="A ridgeline path with green valley and mountains beyond" loading="lazy" decoding="async"></a></figure>
+          <figure class="ph"><a class="ph-open" href="/images/photography/web/p1090844.webp"><img src="/images/photography/thumbs/p1090844.webp" width="1800" height="861" alt="Rocky summit ridge above a green valley" loading="lazy" decoding="async"></a></figure>
+          <figure class="ph"><a class="ph-open" href="/images/photography/web/p1090849.webp"><img src="/images/photography/thumbs/p1090849.webp" width="1800" height="1216" alt="Hazy ridges fading into the distance" loading="lazy" decoding="async"></a></figure>
+          <figure class="ph"><a class="ph-open" href="/images/photography/web/p1090850.webp"><img src="/images/photography/thumbs/p1090850.webp" width="1350" height="1800" alt="A steep scree slope falling away from the ridge" loading="lazy" decoding="async"></a></figure>
+          <figure class="ph"><a class="ph-open" href="/images/photography/web/p1100010.webp"><img src="/images/photography/thumbs/p1100010.webp" width="1800" height="923" alt="A red tractor parked among spring flowers" loading="lazy" decoding="async"></a></figure>
+          <figure class="ph"><a class="ph-open" href="/images/photography/web/p1100022.webp"><img src="/images/photography/thumbs/p1100022.webp" width="1800" height="1039" alt="A boat being lifted by crane on the quayside" loading="lazy" decoding="async"></a></figure>
+          <figure class="ph"><a class="ph-open" href="/images/photography/web/p1100028.webp"><img src="/images/photography/thumbs/p1100028.webp" width="1800" height="842" alt="The colourful houses of the Long Walk in Galway" loading="lazy" decoding="async"></a></figure>
+          <figure class="ph"><a class="ph-open" href="/images/photography/web/p1100040.webp"><img src="/images/photography/thumbs/p1100040.webp" width="943" height="1800" alt="An old stone wall running out into the bay" loading="lazy" decoding="async"></a></figure>
+          <figure class="ph"><a class="ph-open" href="/images/photography/web/p1100067.webp"><img src="/images/photography/thumbs/p1100067.webp" width="1800" height="767" alt="A cargo ship and crane in Galway docks" loading="lazy" decoding="async"></a></figure>
+          <figure class="ph"><a class="ph-open" href="/images/photography/web/p1100075.webp"><img src="/images/photography/thumbs/p1100075.webp" width="1800" height="1014" alt="A graffiti-covered laneway in the city" loading="lazy" decoding="async"></a></figure>
+          <figure class="ph"><a class="ph-open" href="/images/photography/web/p1100080.webp"><img src="/images/photography/thumbs/p1100080.webp" width="1800" height="1033" alt="A quiet city street between old walls and new buildings" loading="lazy" decoding="async"></a></figure>
+          <figure class="ph"><a class="ph-open" href="/images/photography/web/p1100087_01.webp"><img src="/images/photography/thumbs/p1100087_01.webp" width="1350" height="1800" alt="Rocks and seaweed at the water's edge" loading="lazy" decoding="async"></a></figure>
+          <figure class="ph"><a class="ph-open" href="/images/photography/web/p1100098.webp"><img src="/images/photography/thumbs/p1100098.webp" width="1800" height="796" alt="The white curve of a hull in the boatyard" loading="lazy" decoding="async"></a></figure>
+          <figure class="ph"><a class="ph-open" href="/images/photography/web/p1100108.webp"><img src="/images/photography/thumbs/p1100108.webp" width="1800" height="1001" alt="A stone church and its garden" loading="lazy" decoding="async"></a></figure>
+          <figure class="ph"><a class="ph-open" href="/images/photography/web/p1100114.webp"><img src="/images/photography/thumbs/p1100114.webp" width="1800" height="784" alt="Salt marsh and estuary at low tide" loading="lazy" decoding="async"></a></figure>
+          <figure class="ph"><a class="ph-open" href="/images/photography/web/p1100116.webp"><img src="/images/photography/thumbs/p1100116.webp" width="1800" height="1350" alt="A blackbird among yellow wildflowers" loading="lazy" decoding="async"></a></figure>
+          <figure class="ph"><a class="ph-open" href="/images/photography/web/p1100149.webp"><img src="/images/photography/thumbs/p1100149.webp" width="1800" height="1350" alt="A swan feeding among the seaweed at low tide" loading="lazy" decoding="async"></a></figure>
+          <figure class="ph"><a class="ph-open" href="/images/photography/web/p1100162.webp"><img src="/images/photography/thumbs/p1100162.webp" width="1800" height="1350" alt="An oystercatcher picking through the seaweed" loading="lazy" decoding="async"></a></figure>
+          <figure class="ph"><a class="ph-open" href="/images/photography/web/p1100185.webp"><img src="/images/photography/thumbs/p1100185.webp" width="1800" height="1093" alt="A grey heron hunting in a stream" loading="lazy" decoding="async"></a></figure>
+          <figure class="ph"><a class="ph-open" href="/images/photography/web/p1100198.webp"><img src="/images/photography/thumbs/p1100198.webp" width="1800" height="870" alt="An egret wading in the shallows" loading="lazy" decoding="async"></a></figure>
+          <figure class="ph"><a class="ph-open" href="/images/photography/web/p1100211.webp"><img src="/images/photography/thumbs/p1100211.webp" width="1800" height="856" alt="An egret stalking the salt marsh" loading="lazy" decoding="async"></a></figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox -->
+  <dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
+    <button class="lb-btn lb-close" type="button" aria-label="Close viewer">
+      <svg class="icon" aria-hidden="true"><use href="#i-x"/></svg>
+    </button>
+    <button class="lb-btn lb-prev" type="button" aria-label="Previous photo">
+      <svg class="icon" aria-hidden="true"><use href="#i-chevron-left"/></svg>
+    </button>
+    <figure class="lb-stage">
+      <img class="lb-img" id="lb-img" alt="">
+      <figcaption class="lb-caption"><span id="lb-text"></span><span class="lb-count" id="lb-count"></span></figcaption>
+    </figure>
+    <button class="lb-btn lb-next" type="button" aria-label="Next photo">
+      <svg class="icon" aria-hidden="true"><use href="#i-chevron-right"/></svg>
+    </button>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year">2026</span> Caellum Kennedy. All photographs my own.</p>
+      <p>Hand-built, no frameworks · <a href="https://github.com/Caellum-Kennedy/caellumkennedy.github.io" target="_blank" rel="noopener noreferrer">view source</a></p>
+    </div>
+  </footer>
+
+  <script src="/site.js" defer></script>
+  <script>
+    (function () {
+      var box = document.getElementById('lightbox');
+      var lbImg = document.getElementById('lb-img');
+      var lbText = document.getElementById('lb-text');
+      var lbCount = document.getElementById('lb-count');
+      var items = Array.prototype.map.call(document.querySelectorAll('.ph-open'), function (a) {
+        var img = a.querySelector('img');
+        return { full: a.getAttribute('href'), alt: img.getAttribute('alt') };
+      });
+      var current = 0;
+
+      function show(i) {
+        current = (i + items.length) % items.length;
+        lbImg.src = items[current].full;
+        lbImg.alt = items[current].alt;
+        lbText.textContent = items[current].alt;
+        lbCount.textContent = (current + 1) + ' / ' + items.length;
+        // Warm the neighbours so prev/next feel instant.
+        [current + 1, current - 1].forEach(function (n) {
+          new Image().src = items[(n + items.length) % items.length].full;
+        });
+      }
+
+      document.querySelectorAll('.ph-open').forEach(function (a, i) {
+        a.addEventListener('click', function (e) {
+          e.preventDefault();
+          show(i);
+          box.showModal();
+        });
+      });
+
+      box.querySelector('.lb-close').addEventListener('click', function () { box.close(); });
+      box.querySelector('.lb-prev').addEventListener('click', function () { show(current - 1); });
+      box.querySelector('.lb-next').addEventListener('click', function () { show(current + 1); });
+
+      box.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowLeft') show(current - 1);
+        if (e.key === 'ArrowRight') show(current + 1);
+      });
+
+      // Click outside the photo closes the viewer.
+      box.addEventListener('click', function (e) {
+        if (e.target === box) box.close();
+      });
+
+      box.addEventListener('close', function () { lbImg.removeAttribute('src'); });
+    })();
+  </script>
+
+</body>
+
+</html>

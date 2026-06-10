@@ -13,3 +13,7 @@ desktop.ini
 
 # Claude Code
 .claude/
+
+# Original camera files — only the optimised web/ and thumbs/ versions are deployed
+images/photography/*.jpg
+images/photography/*.JPG
