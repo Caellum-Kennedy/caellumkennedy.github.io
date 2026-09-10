@@ -17,3 +17,5 @@ desktop.ini
 # Original camera files — only the optimised web/ and thumbs/ versions are deployed
 images/photography/*.jpg
 images/photography/*.JPG
+
+AGENTS.md
