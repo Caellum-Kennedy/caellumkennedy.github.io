@@ -916,12 +916,12 @@ section {
   color: var(--ink);
 }
 
-.results-tab.is-active {
+.results-tab[aria-pressed="true"] {
   background: var(--accent);
   color: #fff;
 }
 
-[data-theme="dark"] .results-tab.is-active {
+[data-theme="dark"] .results-tab[aria-pressed="true"] {
   color: #07211c;
 }
 
@@ -1045,22 +1045,6 @@ section {
   object-position: top;
 }
 
-.project-thumb--code {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--accent);
-  background:
-    radial-gradient(ellipse at 30% 20%, color-mix(in srgb, var(--accent) 18%, transparent), transparent 60%),
-    var(--bg-sunken);
-}
-
-.project-thumb--code .icon {
-  width: 56px;
-  height: 56px;
-  stroke-width: 1.4;
-}
-
 .project-body {
   padding: 22px 24px 24px;
   display: flex;
@@ -1083,14 +1067,6 @@ section {
   margin-top: auto;
 }
 
-.project-links {
-  margin-top: 16px;
-  display: flex;
-  gap: 18px;
-  font-size: 14.5px;
-  font-weight: 600;
-}
-
 .project-note {
   font-size: 12.5px;
   color: var(--ink-faint);
@@ -1111,7 +1087,9 @@ section {
   gap: 24px;
 }
 
-.skill-group {
+.skill-group,
+.edu-card,
+.beyond-card {
   background: var(--bg-raised);
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
@@ -1147,11 +1125,6 @@ section {
 }
 
 .edu-card {
-  background: var(--bg-raised);
-  border: 1px solid var(--line);
-  border-radius: var(--radius-lg);
-  padding: 26px 28px;
-  box-shadow: var(--shadow-sm);
   display: flex;
   flex-direction: column;
 }
@@ -1210,14 +1183,6 @@ section {
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
   margin-bottom: 40px;
-}
-
-.beyond-card {
-  background: var(--bg-raised);
-  border: 1px solid var(--line);
-  border-radius: var(--radius-lg);
-  padding: 26px 28px;
-  box-shadow: var(--shadow-sm);
 }
 
 .beyond-card .icon {
@@ -1577,7 +1542,6 @@ section {
 .reveal-stagger.in > :nth-child(2) { transition-delay: 0.08s; }
 .reveal-stagger.in > :nth-child(3) { transition-delay: 0.16s; }
 .reveal-stagger.in > :nth-child(4) { transition-delay: 0.24s; }
-.reveal-stagger.in > :nth-child(5) { transition-delay: 0.32s; }
 
 @media (prefers-reduced-motion: reduce) {
   html {

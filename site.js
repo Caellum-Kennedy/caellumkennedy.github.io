@@ -80,17 +80,13 @@
     tab.addEventListener('click', function () {
       var mode = tab.getAttribute('data-mode');
       resultTabs.forEach(function (t) {
-        var on = t === tab;
-        t.classList.toggle('is-active', on);
-        t.setAttribute('aria-pressed', on);
+        t.setAttribute('aria-pressed', t === tab);
       });
       document.querySelectorAll('.results-chart').forEach(function (img) {
         img.classList.toggle('is-active', img.getAttribute('data-mode') === mode);
       });
       document.querySelectorAll('.results-note').forEach(function (n) {
-        var on = n.getAttribute('data-mode') === mode;
-        n.classList.toggle('is-active', on);
-        n.hidden = !on;
+        n.hidden = n.getAttribute('data-mode') !== mode;
       });
     });
   });
