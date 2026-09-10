@@ -57,23 +57,6 @@
     sections.forEach(function (s) { spy.observe(s); });
   }
 
-  // --- Reveal on scroll ---
-  var reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var revealEls = document.querySelectorAll('.reveal, .reveal-stagger');
-  if (reduceMotion || !('IntersectionObserver' in window)) {
-    revealEls.forEach(function (el) { el.classList.add('in'); });
-  } else {
-    var revealer = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('in');
-          revealer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-    revealEls.forEach(function (el) { revealer.observe(el); });
-  }
-
   // --- FYP results comparison toggle ---
   var resultTabs = document.querySelectorAll('.results-tab');
   resultTabs.forEach(function (tab) {

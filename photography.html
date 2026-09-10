@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 
 <head>
   <meta charset="UTF-8">
@@ -27,6 +27,7 @@
   <script>
     // Set theme before first paint to avoid a flash of the wrong theme.
     (function () {
+      document.documentElement.classList.remove('no-js');
       var stored = localStorage.getItem('theme');
       var theme = stored || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
       document.documentElement.setAttribute('data-theme', theme);
@@ -82,7 +83,7 @@
   <main id="main">
     <section class="page-head">
       <div class="container">
-        <div class="section-head reveal">
+        <div class="section-head">
           <span class="section-eyebrow"><svg class="icon" aria-hidden="true"><use href="#i-camera"/></svg> Photography</span>
           <h1>Through my lens.</h1>
           <p class="section-lede">Landscapes from the Connemara hills, Galway's streets and harbour, and the wildlife

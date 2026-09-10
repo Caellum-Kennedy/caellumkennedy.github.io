@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Caellum Kennedy — Software Engineer | Galway, Ireland</title>
   <meta name="description"
-    content="Caellum Kennedy is a software engineer in Galway, Ireland with full-stack development experience, software engineering at Boston Scientific, and reinforcement-learning research at the University of Galway.">
+    content="Caellum Kennedy, software engineer and University of Galway Computer Science graduate. Industry projects, reinforcement-learning research, photography and hiking.">
   <meta name="author" content="Caellum Kennedy">
   <link rel="canonical" href="https://caellumkennedy.com/">
   <meta name="theme-color" content="#f6f5f1" media="(prefers-color-scheme: light)">
@@ -14,14 +14,14 @@
 
   <meta property="og:title" content="Caellum Kennedy — Software Engineer">
   <meta property="og:description"
-    content="Full-stack software engineer in Galway, Ireland. Software engineering at Boston Scientific and reinforcement-learning game agents at the University of Galway.">
+    content="Caellum Kennedy, software engineer and University of Galway Computer Science graduate. Industry projects, reinforcement-learning research, photography and hiking.">
   <meta property="og:image" content="https://caellumkennedy.com/images/og-image.jpg">
   <meta property="og:url" content="https://caellumkennedy.com/">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Caellum Kennedy — Software Engineer">
   <meta name="twitter:description"
-    content="Full-stack software engineer in Galway, Ireland. Software engineering at Boston Scientific and reinforcement-learning game agents at the University of Galway.">
+    content="Caellum Kennedy, software engineer and University of Galway Computer Science graduate. Industry projects, reinforcement-learning research, photography and hiking.">
   <meta name="twitter:image" content="https://caellumkennedy.com/images/og-image.jpg">
 
   <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
@@ -32,6 +32,7 @@
   <script>
     // Set theme before first paint to avoid a flash of the wrong theme.
     (function () {
+      document.documentElement.classList.remove('no-js');
       var stored = localStorage.getItem('theme');
       var theme = stored || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
       document.documentElement.setAttribute('data-theme', theme);
@@ -214,11 +215,9 @@
           Software Engineer · Galway, Ireland
         </p>
         <h1>Caellum Kennedy</h1>
-        <p class="hero-tagline">Built software for industry and research, from maintaining <strong>enterprise tools
-            at Boston Scientific</strong> to developing <strong>reinforcement learning agents</strong> at the University
-          of Galway.</p>
-        <p class="hero-sub">BSc Computer Science &amp; IT, University of Galway · Class of 2026 · Projected First Class
-          Honours</p>
+        <p class="hero-tagline">I'm a <strong>software engineer</strong> and University of Galway Computer Science
+          graduate. Away from the keyboard, I'm usually <strong>hiking with a camera</strong>.</p>
+        <p class="hero-sub">Enterprise software at Boston Scientific · Reinforcement-learning research · Galway, Ireland</p>
 
         <div class="hero-cta">
           <a class="btn btn--primary" href="#projects">
@@ -231,6 +230,7 @@
               <use href="#i-download" />
             </svg> Download CV
           </a>
+          <a class="hero-photo-link" href="/photography.html">View photography</a>
         </div>
 
         <div class="hero-social">
@@ -264,31 +264,25 @@
     <!-- ============ About ============ -->
     <section class="section" id="about">
       <div class="container">
-        <div class="section-head reveal">
+        <div class="section-head">
           <span class="section-eyebrow">About</span>
           <h2>At home in a codebase or on a mountain.</h2>
         </div>
 
         <div class="about-grid">
-          <div class="about-copy reveal">
-            <p>I'm a software engineer from the west of Ireland, with a <strong>BSc in Computer Science &amp;
-                IT at the University of Galway</strong> with a projected First Class Honours. Before computer science I
-              studied <strong>physics with astrophysics at Maynooth</strong> before I transferred course.</p>
-            <p>I spent nine months at <strong>Boston Scientific</strong> as a placement software engineer in the
-              Software Validations department where I shipped software to a live production environment, documented
-              undocumented legacy systems, and optimised a meeting-management app that won an internal Value Improvement
-              Programme award for saving $20,000 a year.</p>
-            <p>My final-year project trained <strong>reinforcement-learning agents</strong> to play a real-time
-              strategy game, using historical self-play to stop them forgetting their own best strategies.</p>
-            <p>Away from the keyboard I lead hikes of students through the Connemara mountains with the University
-              of Galway Mountaineering Club, and I volunteer with the MADRA dog rescue. I also spent years as a
-              lifeguard and
-              swim teacher in Roscommon. Both photos on this page are mine, taken on club hikes there's plenty more in
-              <a href="/photography.html">my photography gallery</a>.
-            </p>
+          <div class="about-copy">
+            <p>I'm from the west of Ireland and graduated from the <strong>University of Galway in 2026</strong>
+              with a BSc (Hons) in Computer Science &amp; IT. I previously studied physics with astrophysics at
+              Maynooth before transferring to Galway.</p>
+            <p>During a nine-month placement at <strong>Boston Scientific</strong>, I maintained C# web applications,
+              built Power Apps tools, and documented systems for the team taking them forward. My final-year
+              research explored how reinforcement-learning agents can learn without forgetting earlier strategies.</p>
+            <p>I lead group hikes in Connemara with the University of Galway Mountaineering Club, volunteer with
+              <strong>MADRA dog rescue</strong>, and photograph the places I explore. The mountain photos here are
+              mine; there's more in <a href="/photography.html">my photography gallery</a>.</p>
           </div>
 
-          <figure class="about-photo reveal">
+          <figure class="about-photo">
             <img src="/images/ridge-1000.webp" width="1000" height="625"
               alt="Two hikers celebrating on a rocky ridge in thick mist in the Connemara mountains" loading="lazy">
             <figcaption>
@@ -300,10 +294,10 @@
           </figure>
         </div>
 
-        <div class="stats reveal-stagger">
-          <div class="stat"><b>1:1</b><span>projected degree grade, BSc Computer Science &amp; IT</span></div>
+        <div class="stats">
+          <div class="stat"><b>20+</b><span>students led on group hikes</span></div>
           <div class="stat"><b>9 mo</b><span>industry placement at Boston Scientific</span></div>
-          <div class="stat"><b>$20k</b><span>saved per year by my optimisations of the app at Boston Scientific</span>
+          <div class="stat"><b>$20k</b><span>saved annually through meeting-management improvements</span>
           </div>
           <div class="stat"><b>80 M</b><span>training steps in my reinforcement-learning research</span></div>
         </div>
@@ -313,13 +307,13 @@
     <!-- ============ Experience ============ -->
     <section class="section section--sunken" id="experience">
       <div class="container">
-        <div class="section-head reveal">
+        <div class="section-head">
           <span class="section-eyebrow">Experience</span>
           <h2>Where I've worked.</h2>
         </div>
 
         <ol class="timeline">
-          <li class="timeline-item reveal">
+          <li class="timeline-item">
             <div class="timeline-meta">
               <h3>Software Engineer <span class="timeline-org">· Boston Scientific</span></h3>
               <span class="timeline-dates">Jan 2025 — Sep 2025 · Galway</span>
@@ -327,14 +321,17 @@
             <p>Placement software engineer in the Software Validations department, building and maintaining the
               internal software used by the Software Quality Engineers.</p>
             <ul>
-              <li>Upgraded and optimised a Power Apps meeting-management system that won an internal Value Improvement
-                Programme award for saving $20,000 per year by optimising its database loading from minutes to
-                milliseconds.</li>
-              <li>Built real-time reporting dashboards in Power BI and automated recurring workflows with Power
-                Automate.</li>
-              <li>Maintained and extended the C# (MVC) web application managing software validation records. This
-                included
-                refactoring code and writing the documentation it never had.</li>
+              <li>Maintained and extended a C# MVC document-review application. Fixed submission bugs and improved
+                search across document titles, departments and sub-departments, including legacy department names
+                embedded in titles, without changing historical production data.</li>
+              <li>Tested changes locally against a test SQL database, tracked updates in GitHub, and documented the
+                application's architecture for the next maintainer. Prepared tested updates for a team member to
+                publish to production through Visual Studio.</li>
+              <li>Created and improved Power Apps meeting-management software backed by SharePoint Lists, coordinating
+                updates and downtime across departments. The improvements saved $20,000 annually and won an internal
+                Value Improvement Programme award.</li>
+              <li>Took part in a cross-functional team tasked with introducing LLMs into the Software Validations
+                department.</li>
             </ul>
             <ul class="tags">
               <li class="tag">Power Apps</li>
@@ -345,19 +342,19 @@
             </ul>
           </li>
 
-          <li class="timeline-item reveal">
+          <li class="timeline-item">
             <div class="timeline-meta">
-              <h3>Lifeguard <span class="timeline-org">· Bay Sports, Hodson Bay</span></h3>
+              <h3>Tour Guide / Instructor <span class="timeline-org">· Baysports, Hodson Bay</span></h3>
               <span class="timeline-dates">May 2024 — Aug 2024</span>
             </div>
-            <p>Lifeguard at Ireland's largest inflatable water park, leading school tours and keeping groups safe on the
-              open water.</p>
+            <p>Managed school tour groups from arrival to departure, coordinated activity timings with colleagues, and
+              helped keep the waterpark safe and organised.</p>
           </li>
 
-          <li class="timeline-item reveal">
+          <li class="timeline-item">
             <div class="timeline-meta">
               <h3>Lifeguard &amp; Swim Teacher <span class="timeline-org">· Roscommon Leisure Centre</span></h3>
-              <span class="timeline-dates">2021 — 2023</span>
+              <span class="timeline-dates">Jun–Aug 2021 · May 2022–Aug 2023</span>
             </div>
             <p>Taught swimming lessons to individuals and groups of all ages and abilities, and enforced pool safety as
               a certified lifeguard.</p>
@@ -369,39 +366,28 @@
     <!-- ============ Projects ============ -->
     <section class="section" id="projects">
       <div class="container">
-        <div class="section-head reveal">
+        <div class="section-head">
           <span class="section-eyebrow">Projects</span>
           <h2>Things I've built.</h2>
-          <p class="section-lede">A research project I'm proud of, and the software around it.</p>
+          <p class="section-lede">Research, full-stack development, and tools used in industry.</p>
         </div>
 
         <!-- Featured: Final Year Project -->
-        <article class="featured reveal">
-          <div class="featured-media">
-            <video controls preload="none" poster="/images/fyp-poster.jpg" width="1280" height="800"
-              aria-label="Video of the trained reinforcement-learning agent playing MicroRTS against CoacAI">
-              <source src="/files/rl-video-step-0-to-step-50000.mp4" type="video/mp4">
-              Your browser doesn't support embedded video.
-              <a href="/files/rl-video-step-0-to-step-50000.mp4">Download the video instead.</a>
-            </video>
-          </div>
+        <article class="featured">
           <div class="featured-body">
             <p class="featured-kicker">Featured · Final Year Project</p>
             <h3>Teaching a game agent not to forget</h3>
-            <p>In standard self-play, reinforcement-learning agents develop strong strategies then overwrite them
-              through continued training and collapse back to baseline. My final year project, <em>The Effect of
-                Historical
-                Checkpoints on a Real-Time Strategy Game Agent Training</em>, forces the agent to keep competing against
-              frozen copies of its past selves, weighted towards the checkpoints it struggles with the most.</p>
-            <p>Over 80 million training steps in MicroRTS, historical self-play prevented the prolonged performance
-              collapses seen in standard self-play and held consistently higher TrueSkill ratings. The video shows the
-              trained agent (blue) playing against competition bot CoacAI.</p>
+            <p>Game agents trained through self-play can forget strategies they previously learned. I built a
+              Java and Python experiment in <strong>MicroRTS</strong> that kept agents competing against historical
+              versions of themselves, with more weight given to opponents they struggled to beat.</p>
+            <p>Across 80 million training steps, historical self-play reduced prolonged performance collapses and
+              produced consistently higher TrueSkill ratings than standard self-play.</p>
             <div class="featured-facts">
               <div><b>80M+</b><span>training steps</span></div>
-              <div><b>85%</b><span>projected grade</span></div>
               <div><b>TrueSkill</b><span>evaluation rating</span></div>
             </div>
             <ul class="tags">
+              <li class="tag">Java</li>
               <li class="tag">Python</li>
               <li class="tag">Reinforcement Learning</li>
               <li class="tag">PPO</li>
@@ -417,43 +403,54 @@
             </div>
           </div>
 
-          <div class="results">
-            <div class="results-head">
-              <h4>Results at a glance</h4>
-              <div class="results-tabs" aria-label="Compare the two training runs">
-                <button class="results-tab" type="button" data-mode="standard" aria-pressed="false">Standard
-                  self-play</button>
-                <button class="results-tab" type="button" data-mode="historical"
-                  aria-pressed="true">Historical
-                  self-play</button>
+          <details class="research-details">
+            <summary>Watch the agent and explore the results</summary>
+            <div class="featured-media">
+              <video controls preload="none" poster="/images/fyp-poster.jpg" width="1280" height="800"
+                aria-label="Video of the trained reinforcement-learning agent playing MicroRTS against CoacAI">
+                <source src="/files/rl-video-step-0-to-step-50000.mp4" type="video/mp4">
+                Your browser doesn't support embedded video.
+                <a href="/files/rl-video-step-0-to-step-50000.mp4">Download the video instead.</a>
+              </video>
+            </div>
+            <div class="results">
+              <div class="results-head">
+                <h4>Results at a glance</h4>
+                <div class="results-tabs" aria-label="Compare the two training runs">
+                  <button class="results-tab" type="button" data-mode="standard" aria-pressed="false">Standard
+                    self-play</button>
+                  <button class="results-tab" type="button" data-mode="historical"
+                    aria-pressed="true">Historical
+                    self-play</button>
+                </div>
               </div>
+              <p class="results-lede">Two runs using the same agent and parameters over ~80&nbsp;million steps: one trained through
+                standard self-play, the other also faced historical checkpoints. The video shows the trained agent
+                (blue) playing against CoacAI.</p>
+              <div class="results-stage">
+                <img class="results-chart" data-mode="standard" src="/images/fyp-standard.webp" width="1128" height="555"
+                  alt="TrueSkill rating over 80 million training steps without historical checkpoints — the rolling average plateaus around 27 to 31 with repeated dips, peaking at 34.8"
+                  loading="lazy" decoding="async">
+                <img class="results-chart is-active" data-mode="historical" src="/images/fyp-historical.webp" width="1128"
+                  height="555"
+                  alt="TrueSkill rating over 80 million training steps with historical checkpoints — the rolling average keeps climbing to around 34 and holds, peaking at 36.7 near the CoacAI reference line"
+                  loading="lazy" decoding="async">
+              </div>
+              <p class="results-note" data-mode="standard" hidden><strong>Without historical checkpoints:</strong> the
+                rating plateaus around 27–31 and repeatedly dips as the agent overwrites its own best strategies. Peak:
+                TrueSkill 34.8.</p>
+              <p class="results-note" data-mode="historical"><strong>With historical checkpoints:</strong> the
+                rating keeps climbing and holds consistently higher through the second half of training with a peak of
+                36.7,
+                closing in on the competition bot CoacAI (top dashed line).</p>
+              <p class="results-credit">Evaluation charts taken directly from the report with TrueSkill rating vs
+                training steps, 83 evaluations per run. Dashed lines mark fixed reference bots.</p>
             </div>
-            <p class="results-lede">Two identical training runs the same agent, same parameters, ~80&nbsp;million steps.
-              The only difference was that one agent also trains against frozen copies of its past selves and one does
-              not.</p>
-            <div class="results-stage">
-              <img class="results-chart" data-mode="standard" src="/images/fyp-standard.webp" width="1128" height="555"
-                alt="TrueSkill rating over 80 million training steps without historical checkpoints — the rolling average plateaus around 27 to 31 with repeated dips, peaking at 34.8"
-                loading="lazy" decoding="async">
-              <img class="results-chart is-active" data-mode="historical" src="/images/fyp-historical.webp" width="1128"
-                height="555"
-                alt="TrueSkill rating over 80 million training steps with historical checkpoints — the rolling average keeps climbing to around 34 and holds, peaking at 36.7 near the CoacAI reference line"
-                loading="lazy" decoding="async">
-            </div>
-            <p class="results-note" data-mode="standard" hidden><strong>Without historical checkpoints:</strong> the
-              rating plateaus around 27–31 and repeatedly dips as the agent overwrites its own best strategies. Peak:
-              TrueSkill 34.8.</p>
-            <p class="results-note" data-mode="historical"><strong>With historical checkpoints:</strong> the
-              rating keeps climbing and holds consistently higher through the second half of training with a peak of
-              36.7,
-              closing in on the competition bot CoacAI (top dashed line).</p>
-            <p class="results-credit">Evaluation charts taken directly from the report with TrueSkill rating vs
-              training steps, 83 evaluations per run. Dashed lines mark fixed reference bots.</p>
-          </div>
+          </details>
         </article>
 
         <div class="project-grid">
-          <article class="project-card reveal">
+          <article class="project-card">
             <div class="project-thumb">
               <img src="/images/melody-metrics.webp" width="1200" height="565"
                 alt="Melody Metrics web app showing trending songs from Last.fm" loading="lazy">
@@ -472,7 +469,7 @@
             </div>
           </article>
 
-          <article class="project-card reveal">
+          <article class="project-card">
             <div class="project-thumb">
               <img src="/images/best4.webp" width="1200" height="565"
                 alt="Best4 Optimisation internal Power Apps application at Boston Scientific (blurred for confidentiality)"
@@ -496,13 +493,13 @@
     <!-- ============ Skills ============ -->
     <section class="section section--sunken" id="skills">
       <div class="container">
-        <div class="section-head reveal">
+        <div class="section-head">
           <span class="section-eyebrow">Skills</span>
           <h2>What I work with.</h2>
         </div>
 
         <div class="skills-grid">
-          <div class="skill-group reveal">
+          <div class="skill-group">
             <h3><svg class="icon" aria-hidden="true">
                 <use href="#i-code" />
               </svg> Languages</h3>
@@ -515,12 +512,11 @@
               <li class="tag">SQL (MySQL / MariaDB)</li>
               <li class="tag">HTML / CSS</li>
               <li class="tag">PowerFx</li>
-              <li class="tag">R</li>
               <li class="tag">MATLAB</li>
             </ul>
           </div>
 
-          <div class="skill-group reveal">
+          <div class="skill-group">
             <h3><svg class="icon" aria-hidden="true">
                 <use href="#i-layers" />
               </svg> Frameworks &amp; Libraries</h3>
@@ -528,17 +524,15 @@
               <li class="tag">Spring Boot</li>
               <li class="tag">React</li>
               <li class="tag">Vue.js</li>
-              <li class="tag">Node.js</li>
             </ul>
           </div>
 
-          <div class="skill-group reveal">
+          <div class="skill-group">
             <h3><svg class="icon" aria-hidden="true">
                 <use href="#i-wrench" />
               </svg> Platforms &amp; Tools</h3>
             <ul class="tags">
               <li class="tag">Git / GitHub</li>
-              <li class="tag">GitHub Actions (CI/CD)</li>
               <li class="tag">Firebase</li>
               <li class="tag">Power Apps</li>
               <li class="tag">Power BI</li>
@@ -548,7 +542,7 @@
             </ul>
           </div>
 
-          <div class="skill-group reveal">
+          <div class="skill-group">
             <h3><svg class="icon" aria-hidden="true">
                 <use href="#i-cpu" />
               </svg> Practices &amp; Concepts</h3>
@@ -556,7 +550,6 @@
               <li class="tag">Full-stack development</li>
               <li class="tag">REST APIs</li>
               <li class="tag">Agile / Scrum</li>
-              <li class="tag">Test-driven development</li>
               <li class="tag">MVC architecture</li>
               <li class="tag">Reinforcement learning</li>
               <li class="tag">Technical documentation</li>
@@ -569,40 +562,38 @@
     <!-- ============ Education ============ -->
     <section class="section" id="education">
       <div class="container">
-        <div class="section-head reveal">
+        <div class="section-head">
           <span class="section-eyebrow">Education</span>
           <h2>Where I studied.</h2>
         </div>
 
         <div class="edu-grid">
-          <div class="edu-card reveal">
+          <div class="edu-card">
             <span class="edu-years">2023 — 2026</span>
             <h3><a
                 href="https://www.universityofgalway.ie/courses/undergraduate-courses/computer-science-and-information-technology.html"
                 target="_blank" rel="noopener noreferrer">BSc (Hons) Computer Science &amp; IT</a></h3>
             <p class="edu-school">University of Galway</p>
-            <span class="edu-badge">Projected First Class Honours (1:1)</span>
-            <p>Final year project on reinforcement learning in real-time strategy games, supervised by Dr. Patrick
-              Mannion with a projected mark of 85%.</p>
+            <p>Graduated in 2026. Researched reinforcement learning in real-time strategy games for my final-year
+              project, supervised by Dr. Patrick Mannion.</p>
             <p>Coursework: Software Engineering, Artificial Intelligence, Machine Learning, Distributed &amp; Parallel
               Systems, Real-Time Systems, Computer Networks, Databases.</p>
           </div>
 
-          <div class="edu-card reveal">
+          <div class="edu-card">
             <span class="edu-years">2018 — 2022</span>
             <h3><a
                 href="https://www.maynoothuniversity.ie/study-maynooth/undergraduate-studies/courses/bsc-physics-astrophysics"
-                target="_blank" rel="noopener noreferrer">BSc Physics with Astrophysics</a></h3>
+                target="_blank" rel="noopener noreferrer">Studies in Physics with Astrophysics</a></h3>
             <p class="edu-school">Maynooth University</p>
             <p>Three years of physics, mathematics and computational modelling before transferring into computer
-              science at Galway.</p>
+              science at Galway in 2023.</p>
           </div>
 
-          <div class="edu-card reveal">
+          <div class="edu-card">
             <span class="edu-years">2013 — 2018</span>
             <h3>Leaving Certificate</h3>
             <p class="edu-school">CBS Roscommon</p>
-            <p>456 points. Including H2 Business, H3 Physics and H3 Geography.</p>
           </div>
         </div>
       </div>
@@ -611,22 +602,22 @@
     <!-- ============ Beyond the code ============ -->
     <section class="section section--sunken" id="beyond">
       <div class="container">
-        <div class="section-head reveal">
+        <div class="section-head">
           <span class="section-eyebrow">Beyond the code</span>
           <h2>Mountains, dogs &amp; open water.</h2>
         </div>
 
         <div class="beyond-grid">
-          <div class="beyond-card reveal">
+          <div class="beyond-card">
             <svg class="icon" aria-hidden="true">
               <use href="#i-mountain" />
             </svg>
             <h3>Hike Leader</h3>
-            <p>I lead groups of students through the Connemara mountains with the University of Galway
-              Mountaineering Club. Mountain Skills 2 and Remote Emergency Care 3 certified.</p>
+            <p>I lead groups of 20+ students through the Connemara mountains with the University of Galway
+              Mountaineering Club. Mountain Skills 2 and Remote Emergency Care 4 certified.</p>
           </div>
 
-          <div class="beyond-card reveal">
+          <div class="beyond-card">
             <svg class="icon" aria-hidden="true">
               <use href="#i-heart" />
             </svg>
@@ -635,7 +626,7 @@
               way.</p>
           </div>
 
-          <div class="beyond-card reveal">
+          <div class="beyond-card">
             <svg class="icon" aria-hidden="true">
               <use href="#i-waves" />
             </svg>
@@ -644,11 +635,11 @@
           </div>
         </div>
 
-        <ul class="cert-list reveal">
+        <ul class="cert-list">
           <li><span><a href="/files/PowerPlatformCert.pdf" target="_blank" rel="noopener noreferrer">Microsoft
                 Certified: Power Platform Fundamentals (PL-900)</a></span><span class="cert-year">2026</span></li>
           <li><span>Mountain Skills 2 - Mountaineering Ireland</span><span class="cert-year">2024</span></li>
-          <li><span>Remote Emergency Care 3 - Mountaineering Ireland</span><span class="cert-year">2024</span></li>
+          <li><span>Remote Emergency Care 4</span><span class="cert-year">2025</span></li>
           <li><span>PADI Open Water Diver</span><span class="cert-year">2023</span></li>
           <li><span>Pool Lifeguard Certificate</span><span class="cert-year">2023</span></li>
           <li><span>Swim Teacher Certificate</span><span class="cert-year">2022</span></li>
@@ -659,11 +650,10 @@
 
     <!-- ============ Contact ============ -->
     <section class="contact" id="contact">
-      <div class="container reveal">
+      <div class="container">
         <span class="section-eyebrow">Contact</span>
-        <h2>Let's build something.</h2>
-        <p class="section-lede">I'm finishing my degree at the University of Galway and looking for my next
-          opportunity. If you think I'd be a good fit for your team, I'd love to hear from you.</p>
+        <h2>Let's keep in touch.</h2>
+        <p class="section-lede">For questions about my work, projects, or photography, feel free to get in touch.</p>
         <div class="contact-actions">
           <a class="btn btn--primary" href="mailto:caellumkennedy@gmail.com">
             <svg class="icon" aria-hidden="true">
