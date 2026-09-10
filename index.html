@@ -403,50 +403,47 @@
             </div>
           </div>
 
-          <details class="research-details">
-            <summary>Watch the agent and explore the results</summary>
-            <div class="featured-media">
-              <video controls preload="none" poster="/images/fyp-poster.jpg" width="1280" height="800"
-                aria-label="Video of the trained reinforcement-learning agent playing MicroRTS against CoacAI">
-                <source src="/files/rl-video-step-0-to-step-50000.mp4" type="video/mp4">
-                Your browser doesn't support embedded video.
-                <a href="/files/rl-video-step-0-to-step-50000.mp4">Download the video instead.</a>
-              </video>
-            </div>
-            <div class="results">
-              <div class="results-head">
-                <h4>Results at a glance</h4>
-                <div class="results-tabs" aria-label="Compare the two training runs">
-                  <button class="results-tab" type="button" data-mode="standard" aria-pressed="false">Standard
-                    self-play</button>
-                  <button class="results-tab" type="button" data-mode="historical"
-                    aria-pressed="true">Historical
-                    self-play</button>
-                </div>
+          <div class="featured-media">
+            <video controls preload="none" poster="/images/fyp-poster.jpg" width="1280" height="800"
+              aria-label="Video of the trained reinforcement-learning agent playing MicroRTS against CoacAI">
+              <source src="/files/rl-video-step-0-to-step-50000.mp4" type="video/mp4">
+              Your browser doesn't support embedded video.
+              <a href="/files/rl-video-step-0-to-step-50000.mp4">Download the video instead.</a>
+            </video>
+          </div>
+          <div class="results">
+            <div class="results-head">
+              <h4>Results at a glance</h4>
+              <div class="results-tabs" aria-label="Compare the two training runs">
+                <button class="results-tab" type="button" data-mode="standard" aria-pressed="false">Standard
+                  self-play</button>
+                <button class="results-tab" type="button" data-mode="historical"
+                  aria-pressed="true">Historical
+                  self-play</button>
               </div>
-              <p class="results-lede">Two runs using the same agent and parameters over ~80&nbsp;million steps: one trained through
-                standard self-play, the other also faced historical checkpoints. The video shows the trained agent
-                (blue) playing against CoacAI.</p>
-              <div class="results-stage">
-                <img class="results-chart" data-mode="standard" src="/images/fyp-standard.webp" width="1128" height="555"
-                  alt="TrueSkill rating over 80 million training steps without historical checkpoints — the rolling average plateaus around 27 to 31 with repeated dips, peaking at 34.8"
-                  loading="lazy" decoding="async">
-                <img class="results-chart is-active" data-mode="historical" src="/images/fyp-historical.webp" width="1128"
-                  height="555"
-                  alt="TrueSkill rating over 80 million training steps with historical checkpoints — the rolling average keeps climbing to around 34 and holds, peaking at 36.7 near the CoacAI reference line"
-                  loading="lazy" decoding="async">
-              </div>
-              <p class="results-note" data-mode="standard" hidden><strong>Without historical checkpoints:</strong> the
-                rating plateaus around 27–31 and repeatedly dips as the agent overwrites its own best strategies. Peak:
-                TrueSkill 34.8.</p>
-              <p class="results-note" data-mode="historical"><strong>With historical checkpoints:</strong> the
-                rating keeps climbing and holds consistently higher through the second half of training with a peak of
-                36.7,
-                closing in on the competition bot CoacAI (top dashed line).</p>
-              <p class="results-credit">Evaluation charts taken directly from the report with TrueSkill rating vs
-                training steps, 83 evaluations per run. Dashed lines mark fixed reference bots.</p>
             </div>
-          </details>
+            <p class="results-lede">Two runs using the same agent and parameters over ~80&nbsp;million steps: one trained through
+              standard self-play, the other also faced historical checkpoints. The video shows the trained agent
+              (blue) playing against CoacAI.</p>
+            <div class="results-stage">
+              <img class="results-chart" data-mode="standard" src="/images/fyp-standard.webp" width="1128" height="555"
+                alt="TrueSkill rating over 80 million training steps without historical checkpoints — the rolling average plateaus around 27 to 31 with repeated dips, peaking at 34.8"
+                loading="lazy" decoding="async">
+              <img class="results-chart is-active" data-mode="historical" src="/images/fyp-historical.webp" width="1128"
+                height="555"
+                alt="TrueSkill rating over 80 million training steps with historical checkpoints — the rolling average keeps climbing to around 34 and holds, peaking at 36.7 near the CoacAI reference line"
+                loading="lazy" decoding="async">
+            </div>
+            <p class="results-note" data-mode="standard" hidden><strong>Without historical checkpoints:</strong> the
+              rating plateaus around 27–31 and repeatedly dips as the agent overwrites its own best strategies. Peak:
+              TrueSkill 34.8.</p>
+            <p class="results-note" data-mode="historical"><strong>With historical checkpoints:</strong> the
+              rating keeps climbing and holds consistently higher through the second half of training with a peak of
+              36.7,
+              closing in on the competition bot CoacAI (top dashed line).</p>
+            <p class="results-credit">Evaluation charts taken directly from the report with TrueSkill rating vs
+              training steps, 83 evaluations per run. Dashed lines mark fixed reference bots.</p>
+          </div>
         </article>
 
         <div class="project-grid">
